@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="沪地知图——上海地理等级考知识框架与考点梳理:5大教材模块、24章节、84个核心知识点、6条贯穿专题,并收录2025年真题与参考答案。">
+<title>沪地知图 · 上海地理等级考知识框架与考点</title>
+<style>
+:root{--paper:#f3f6f4;--card:#fff;--ink:#1f2d28;--ink2:#5a6b63;--hair:#dde6e1;--accent:#2e7d5b;--accentsoft:#e6f2ec;--shadow:0 1px 3px rgba(30,50,40,.06),0 4px 16px rgba(30,50,40,.05);--brush:'Noto Serif SC',serif;--sans:'Noto Sans SC',-apple-system,system-ui,sans-serif;--hot:#c0392b;--hotsoft:#fbeae8}
+*{box-sizing:border-box;margin:0;padding:0}
+[role="button"]:focus-visible,button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:8px}
+[role="button"]{cursor:pointer}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:hidden}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.dark{--paper:#161c19;--card:#1d2521;--ink:#e8efe9;--ink2:#9db0a6;--hair:#2c3833;--accentsoft:#1f3329;--shadow:0 1px 3px rgba(0,0,0,.3),0 4px 16px rgba(0,0,0,.25);--hotsoft:#3a211f}
+.top{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--hair)}
+.topin{max-width:1100px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:14px}
+.logo{display:flex;align-items:center;gap:10px;cursor:pointer}
+.logomark{width:40px;height:40px;border-radius:11px;background:linear-gradient(135deg,#2e7d5b,#3a9e72);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--brush);font-size:21px;font-weight:600;box-shadow:var(--shadow)}
+.logotext b{font-family:var(--brush);font-size:18px;font-weight:600;display:block;line-height:1.15}
+.logotext span{font-size:11px;color:var(--ink2)}
+.topspace{flex:1}
+.tbtn{width:40px;height:40px;border-radius:10px;border:1px solid var(--hair);background:var(--card);color:var(--ink);cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;transition:.15s}
+.tbtn:hover{border-color:var(--accent);color:var(--accent)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.hero{padding:54px 0 30px;text-align:center}
+.hero .ey{font-size:12px;letter-spacing:3px;color:var(--accent);font-weight:600;margin-bottom:14px}
+.hero h1{font-family:var(--brush);font-size:40px;font-weight:600;letter-spacing:.04em;line-height:1.2;margin-bottom:14px}
+.hero p{font-size:14.5px;color:var(--ink2);max-width:580px;margin:0 auto 8px}
+.herostats{display:flex;justify-content:center;gap:30px;margin-top:26px;flex-wrap:wrap}
+.hstat b{font-family:var(--brush);font-size:26px;font-weight:600;color:var(--accent);display:block;line-height:1}
+.hstat span{font-size:11.5px;color:var(--ink2)}
+.sechead{display:flex;align-items:baseline;gap:12px;margin:38px 0 18px;padding-top:8px}
+.sechead .bar{width:4px;height:20px;border-radius:2px;background:var(--accent)}
+.sechead h2{font-family:var(--brush);font-size:21px;font-weight:600}
+.sechead .note{font-size:12px;color:var(--ink2)}
+.examcard{background:var(--card);border:1px solid var(--hair);border-radius:14px;padding:18px 20px;margin-bottom:8px}
+.examcard .row{display:flex;gap:10px;padding:7px 0;font-size:13px;line-height:1.6;border-bottom:1px solid var(--hair)}
+.examcard .row:last-child{border-bottom:none}
+.examcard .row b{color:var(--accent);flex:none;width:64px;font-weight:600}
+.examcard .row span{color:var(--ink2)}
+.examcard .src{font-size:11px;color:var(--ink2);opacity:.7;margin-top:8px}
+.modgrid{display:grid;gap:16px;margin-bottom:18px}
+.modgrid.g2{grid-template-columns:repeat(2,1fr)}
+.modgrid.g3{grid-template-columns:repeat(3,1fr)}
+.modgroup-label{font-size:12.5px;font-weight:600;color:var(--ink2);margin:0 0 10px 2px;letter-spacing:.02em}
+.modcard{background:var(--card);border:1px solid var(--hair);border-radius:16px;padding:20px;cursor:pointer;transition:.2s;border-top:3px solid var(--mc);display:flex;flex-direction:column;height:100%}
+.modcard:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--mc)}
+.modcard .tagrow{display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap}
+.modcard .tag{display:inline-block;font-size:10.5px;font-weight:600;padding:3px 9px;border-radius:20px;background:var(--mcsoft);color:var(--mc)}
+.modcard .freq{display:inline-block;font-size:10.5px;font-weight:600;padding:3px 9px;border-radius:20px;background:var(--hotsoft);color:var(--hot)}
+.modcard h3{font-family:var(--brush);font-size:20px;font-weight:600;margin-bottom:3px}
+.modcard .subt{font-size:13px;color:var(--mc);font-weight:500;margin-bottom:10px}
+.modcard .desc{font-size:12.5px;color:var(--ink2);line-height:1.6;margin-bottom:14px;flex:1}
+.modcard .meta{display:flex;gap:14px;font-size:11.5px;color:var(--ink2);border-top:1px solid var(--hair);padding-top:11px}
+.modcard .meta b{color:var(--ink);font-weight:600}
+.topicrow{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.topicchip{background:var(--card);border:1px solid var(--hair);border-radius:12px;padding:11px 15px;cursor:pointer;transition:.15s}
+.topicchip:hover{border-color:var(--accent);background:var(--accentsoft)}
+.topicchip b{font-family:var(--brush);font-size:15px;font-weight:600;display:block}
+.topicchip span{font-size:11.5px;color:var(--ink2)}
+.page{display:none}
+.page.on{display:block;animation:fade .25s}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.dhero{padding:22px 0 18px;border-bottom:1px solid var(--hair);margin-bottom:8px}
+.dbar{display:flex;align-items:center;gap:12px;margin-bottom:18px;flex-wrap:nowrap}
+.backbtn{font-size:13px;color:var(--accent);background:var(--accentsoft);border:1px solid transparent;border-radius:20px;padding:7px 16px;font-weight:600;cursor:pointer;flex:none;transition:.15s;white-space:nowrap}
+.backbtn:hover{border-color:var(--accent)}
+.crumb{font-size:12.5px;color:var(--ink2);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.crumb a{color:var(--accent);text-decoration:none}
+.crumb a:hover{text-decoration:underline}
+.dtitle{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.dtitle .big{font-family:var(--brush);font-size:30px;font-weight:600;color:var(--dc);line-height:1}
+.dtitle .ds{font-size:15px;font-weight:600}
+.dtitle .dtag{font-size:11px;font-weight:600;padding:4px 12px;border-radius:14px;background:var(--dcsoft);color:var(--dc)}
+.dtitle .dfreq{font-size:11px;font-weight:600;padding:4px 12px;border-radius:14px;background:var(--hotsoft);color:var(--hot)}
+.dintro{font-size:13.5px;color:var(--ink2);line-height:1.7;background:var(--card);border:1px solid var(--hair);border-left:3px solid var(--dc);border-radius:10px;padding:15px 17px;margin:18px 0 22px}
+.examblock{background:var(--card);border:1px solid var(--hair);border-radius:12px;padding:16px 18px;margin-bottom:26px}
+.examblock .eh{display:flex;align-items:center;gap:8px;margin-bottom:12px}
+.examblock .eh .dot{width:8px;height:8px;border-radius:50%;background:var(--hot)}
+.examblock .eh h4{font-family:var(--brush);font-size:15px;font-weight:600;color:var(--hot)}
+.examblock .esum{font-size:12.5px;color:var(--ink2);line-height:1.65;margin-bottom:14px}
+.hotitem{padding:10px 12px;border-radius:9px;background:var(--paper);margin-bottom:8px}
+.hotitem .ht{display:flex;align-items:center;gap:8px;margin-bottom:4px;flex-wrap:wrap}
+.hotitem .ht b{font-size:13px;font-weight:600}
+.hotitem .ht .htag{font-size:10px;font-weight:600;padding:2px 8px;border-radius:10px;background:var(--hotsoft);color:var(--hot)}
+.hotitem .hd{font-size:11.5px;color:var(--ink2);line-height:1.55}
+.examyears{font-size:11.5px;color:var(--ink2);line-height:1.6;padding:10px 12px;background:var(--accentsoft);border-radius:9px;margin-top:4px}
+.examyears b{color:var(--accent)}
+.esrc{font-size:10.5px;color:var(--ink2);opacity:.7;margin-top:8px}
+.chapter{margin-bottom:22px}
+.chtitle{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.chnum{width:26px;height:26px;border-radius:8px;background:var(--dc);color:#fff;font-family:var(--brush);font-size:13px;font-weight:600;display:flex;align-items:center;justify-content:center;flex:none}
+.chtitle h3{font-family:var(--brush);font-size:17px;font-weight:600}
+.ptlist{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;padding-left:0}
+.ptcol{display:grid;grid-template-columns:1fr;gap:12px;padding-left:0}
+.ptitem{background:var(--card);border:1px solid var(--hair);border-radius:9px;padding:11px 14px;font-size:13px;line-height:1.55;position:relative;transition:.15s}
+.ptitem:hover{border-color:var(--dc)}
+
+.ptcard{background:var(--card);border:1px solid var(--hair);border-radius:10px;padding:13px 15px;border-top:2px solid var(--dc);transition:.15s}
+.ptcard:hover{box-shadow:var(--shadow)}
+.ptcard .pchead{font-size:13.5px;font-weight:600;color:var(--ink);line-height:1.45;margin-bottom:7px}
+.ptcard .pcbody{font-size:12px;color:var(--ink2);line-height:1.7}
+.ptcard .pchead:last-child{margin-bottom:0}
+.tpmod{display:flex;flex-wrap:wrap;gap:8px}
+.tpmodchip{font-size:12px;padding:6px 12px;border-radius:8px;background:var(--accentsoft);color:var(--accent);font-weight:500;cursor:pointer}
+footer{text-align:center;padding:40px 20px 30px;color:var(--ink2);font-size:12px;border-top:1px solid var(--hair);margin-top:40px}
+footer .fnote{margin-top:6px;font-size:11px;opacity:.8}
+@media(max-width:780px){
+  .modgrid.g3{grid-template-columns:repeat(2,1fr)}
+  .topicrow{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+  .wrap{padding:0 14px}
+  .topin{padding:11px 14px;gap:10px}
+  .logomark{width:36px;height:36px;font-size:19px}
+  .logotext b{font-size:16px}
+  .hero{padding:34px 0 20px}
+  .hero h1{font-size:27px}
+  .hero .ey{font-size:11px;letter-spacing:2px}
+  .hero p{font-size:13.5px}
+  .herostats{gap:16px 22px;margin-top:22px}
+  .hstat b{font-size:22px}
+  .sechead{margin:30px 0 14px}
+  .sechead h2{font-size:18px}
+  .sechead .note{font-size:11px}
+  .modgrid.g2,.modgrid.g3{grid-template-columns:1fr;gap:12px}
+  .topicrow{grid-template-columns:1fr}
+  .examcard{padding:15px 16px}
+  .examcard .row{flex-direction:column;gap:2px;padding:8px 0}
+  .examcard .row b{width:auto}
+  .dtitle .big{font-size:25px}
+  .dtitle .ds{font-size:14px}
+  .dintro{padding:13px 15px;font-size:13px}
+  .ptcol{grid-template-columns:1fr}
+  .chnum{width:24px;height:24px;font-size:12px}
+  .chtitle h3{font-size:16px}
+  .kbcard{padding:13px 15px}
+  .kbcard .kbtitle{font-size:14px}
+  .seclabel{font-size:11px}
+  .sectext{font-size:12.5px;padding-left:10px}
+  .examblock{padding:14px 15px}
+  .ptlist{grid-template-columns:1fr}
+  footer{padding:32px 16px 26px}
+}
+@media(max-width:380px){
+  .hero h1{font-size:24px}
+  .herostats{gap:14px 18px}
+  .hstat b{font-size:20px}
+  .seclabel{font-size:10.5px}
+}
+
+.kbcard{background:var(--card);border:1px solid var(--hair);border-top:2px solid var(--dc);border-radius:0 0 12px 12px;padding:14px 17px;height:100%}
+.kbcard .kbtitle{font-size:14.5px;font-weight:600;color:var(--ink);margin-bottom:11px}
+.kbsecs{display:grid;grid-template-columns:90px 1fr;gap:10px 12px;align-items:start}
+.secrow{display:contents}
+.seclabel{white-space:nowrap;font-size:11.5px;font-weight:600;color:var(--accent);text-align:right;padding-top:2px;line-height:1.5}
+.seclabel.err{color:#c0392b}
+body.dark .seclabel.err{color:#e88}
+.sectext{flex:1;font-size:13px;color:var(--ink2);line-height:1.68;border-left:2px solid var(--hair);padding-left:13px}
+
+.pathbar{display:flex;flex-wrap:wrap;align-items:center;gap:7px;background:var(--card);border:1px solid var(--hair);border-radius:12px;padding:13px 16px;margin-bottom:16px}
+.pathnode{font-size:12.5px;font-weight:600;color:var(--accent);background:var(--accentsoft);padding:5px 13px;border-radius:16px;white-space:nowrap}
+.patharrow{color:var(--ink2);font-size:13px;opacity:.55}
+.ckwrap{display:flex;flex-direction:column;gap:12px;margin-bottom:18px}
+.ckcard{background:var(--card);border:1px solid var(--hair);border-left:3px solid var(--accent);border-radius:0 12px 12px 0;padding:14px 17px}
+.ckhead{display:flex;align-items:center;gap:9px;margin-bottom:9px}
+.cknum{width:22px;height:22px;border-radius:50%;background:var(--accent);color:#fff;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center;flex:none}
+.ckstage{font-size:14.5px;font-weight:600;color:var(--ink)}
+.ckfrom{font-size:10.5px;font-weight:600;color:var(--ink2);background:var(--paper);border:1px solid var(--hair);padding:2px 9px;border-radius:10px}
+.ckbody{font-size:13px;color:var(--ink);line-height:1.7;margin-bottom:10px}
+.ckrow{display:flex;gap:10px;align-items:flex-start;margin-top:6px}
+.cklabel{flex:none;width:36px;font-size:10.5px;font-weight:600;color:var(--accent);text-align:right;padding-top:2px}
+.cklabel.exam{color:#c0392b}
+body.dark .cklabel.exam{color:#e88}
+.cktext{flex:1;font-size:12px;color:var(--ink2);line-height:1.65;border-left:2px solid var(--hair);padding-left:11px}
+.topicexam{display:flex;gap:11px;align-items:flex-start;background:var(--accentsoft);border:1px solid var(--hair);border-left:3px solid var(--accent);border-radius:12px;padding:14px 16px;margin-top:20px;font-size:12.5px;line-height:1.7;color:var(--ink2)}
+.teicon{flex:none;color:var(--accent);font-size:15px;line-height:1.5}
+@media(max-width:600px){.pathbar{padding:11px 13px}.pathnode{font-size:11.5px;padding:4px 10px}.ckcard{padding:13px 14px}.topicexam{padding:12px 13px}}
+
+.kdbadge{display:inline-block;margin-left:8px;font-size:10px;font-weight:600;color:#c0392b;background:var(--hotsoft,#fbeae8);padding:2px 8px;border-radius:10px;vertical-align:2px}
+.kdbadge.top{color:#fff;background:#c0392b}
+.kdbadge.hard{color:#7a4a9e;background:#7a4a9e1f}
+body.dark .kdbadge{color:#e88}
+body.dark .kdbadge.top{color:#fff;background:#a33}
+body.dark .kdbadge.hard{color:#c9a3e8}
+.kdrow{display:flex;gap:10px;align-items:flex-start;margin-top:11px;padding-top:10px;border-top:1px dashed var(--hair)}
+.kdlabel{flex:none;width:20px;height:20px;border-radius:6px;background:#c0392b;color:#fff;font-size:11px;font-weight:600;display:flex;align-items:center;justify-content:center}
+.kdtext{flex:1;font-size:11.5px;color:var(--ink2);line-height:1.6;padding-top:1px}
+
+
+
+.paperentry{margin-bottom:8px}
+.papercard{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--hair);border-left:3px solid var(--accent);border-radius:0 12px 12px 0;padding:17px 20px;cursor:pointer;transition:.2s}
+.papercard:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
+.ppleft{flex:1}
+.ppyear{display:inline-block;font-size:11px;font-weight:600;color:#fff;background:var(--accent);padding:2px 10px;border-radius:10px;margin-bottom:7px}
+.ppname{font-family:var(--brush);font-size:17px;font-weight:600;margin-bottom:4px}
+.ppmeta{font-size:12px;color:var(--ink2)}
+.pparrow{font-size:20px;color:var(--accent);flex:none}
+.paperblock{background:var(--card);border:1px solid var(--hair);border-radius:12px;margin-bottom:12px;overflow:hidden}
+.pbhead{display:flex;align-items:center;gap:11px;padding:14px 17px;cursor:pointer;user-select:none}
+.pbnum{width:26px;height:26px;border-radius:8px;background:var(--accent);color:#fff;font-family:var(--brush);font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center;flex:none}
+.pbtitle{flex:1}
+.pbtitle b{font-family:var(--brush);font-size:16px;font-weight:600;display:block}
+.pbtitle span{font-size:11.5px;color:var(--ink2)}
+.pbarrow{font-size:12px;color:var(--ink2);transition:transform .2s}
+.paperblock.open .pbarrow{transform:rotate(180deg)}
+.pbbody{max-height:0;overflow:hidden;transition:max-height .4s;padding:0 17px}
+.paperblock.open .pbbody{max-height:4000px;padding:0 17px 16px}
+.pbbg{font-size:12.5px;color:var(--ink2);line-height:1.7;background:var(--paper);border-radius:9px;padding:12px 14px;margin-bottom:12px}
+.psub{border-top:1px dashed var(--hair);padding-top:12px;margin-top:12px}
+.psub:first-of-type{border-top:none;margin-top:0;padding-top:0}
+.psubq{font-size:13px;color:var(--ink);line-height:1.65;margin-bottom:8px}
+.psubn{font-weight:600;color:var(--accent);margin-right:5px}
+.psubtype{display:inline-block;font-size:10px;color:var(--ink2);background:var(--paper);border:1px solid var(--hair);padding:1px 7px;border-radius:9px;margin-right:6px}
+.psuba{display:block;font-size:12.5px;color:var(--ink2);line-height:1.65;background:var(--accentsoft);border-radius:8px;padding:9px 12px;margin-bottom:8px}
+.psalbl{display:inline-flex;vertical-align:middle;margin-right:8px;width:18px;height:18px;border-radius:5px;background:var(--accent);color:#fff;font-size:10px;font-weight:600;align-items:center;justify-content:center}
+.psubkp{font-size:11.5px;color:var(--ink2)}
+.kpjump{font-size:11.5px;color:var(--accent);background:none;border:1px solid var(--accent);border-radius:14px;padding:3px 11px;cursor:pointer;transition:.15s;margin-left:4px}
+.kpjump:hover{background:var(--accentsoft)}
+.ztfull{font-size:10.5px;color:var(--accent);background:none;border:1px solid var(--hair);border-radius:12px;padding:2px 10px;cursor:pointer;margin-left:8px}
+.ztfull:hover{border-color:var(--accent)}
+.kbflash{animation:kbflash 1.6s ease}
+@keyframes kbflash{0%,100%{box-shadow:none}30%{box-shadow:0 0 0 3px var(--accent)}}
+@media(max-width:600px){.papercard{padding:14px 16px}.ppname{font-size:15px}}
+
+.pbimg{font-size:12px;color:var(--ink2);line-height:1.65;background:var(--accentsoft);border-radius:9px;padding:11px 13px;margin-bottom:12px;display:block}
+.pbimglbl{display:inline-flex;vertical-align:middle;margin-right:9px;font-size:10px;font-weight:600;color:#fff;background:var(--accent);padding:2px 8px;border-radius:6px}
+
+.pbfigbtns{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.figbtn{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:#fff;background:#c77a3a;border:1px solid #c77a3a;border-radius:18px;padding:7px 14px;cursor:pointer;transition:.15s;font-weight:600}
+.figbtn:hover{filter:brightness(1.08);box-shadow:var(--shadow)}
+.figbtnicon{font-size:13px}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.82);z-index:1000;display:none;align-items:center;justify-content:center;padding:20px}
+.lightbox.show{display:flex}
+.lbinner{background:var(--card);border-radius:14px;max-width:94vw;max-height:92vh;display:flex;flex-direction:column;overflow:hidden}
+.lbbar{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:1px solid var(--hair)}
+.lbbar span{font-size:14px;font-weight:600;color:var(--ink)}
+.lbclose{background:none;border:none;font-size:18px;color:var(--ink2);cursor:pointer;padding:0 4px;line-height:1}
+.lbclose:hover{color:var(--ink)}
+.lbscroll{overflow-y:auto;overflow-x:hidden;background:#fff;-webkit-overflow-scrolling:touch}
+#lbimg{width:100%;max-width:760px;height:auto;display:block;margin:0 auto;background:#fff}
+
+.ztlink{margin-left:8px;font-size:11px;color:var(--accent);background:none;border:1px solid var(--accent);border-radius:12px;padding:2px 10px;cursor:pointer;white-space:nowrap;transition:.15s}
+.ztlink:hover{background:var(--accentsoft)}
+
+.subflash{animation:subflash 1.8s ease}
+@keyframes subflash{0%,100%{background:transparent}25%,60%{background:var(--accentsoft);box-shadow:0 0 0 2px var(--accent);border-radius:8px}}
+
+.yearcard{position:relative;display:flex;flex-direction:column;background:var(--card);border:1px solid var(--hair);border-left:3px solid var(--hair);border-radius:0 10px 10px 0;padding:15px 18px;margin-bottom:10px;cursor:pointer;transition:.18s}
+.yearcard:hover{box-shadow:var(--shadow);transform:translateY(-1px);border-left-color:var(--accent)}
+.yearcard.yfullcard{border-left-color:var(--accent);background:linear-gradient(0deg,var(--accentsoft),var(--card))}
+.yctop{display:flex;align-items:center;gap:10px;margin-bottom:4px}
+.ycyear{font-size:21px;font-weight:700;color:var(--ink);font-family:var(--brush)}
+.ybadge{font-size:10px;font-weight:600;padding:2px 9px;border-radius:10px}
+.yfull{color:#fff;background:var(--accent)}
+.ythemes{color:#fff;background:#c77a3a}
+.ypending{color:var(--ink2);background:var(--hair)}
+.ycsub{font-size:12.5px;color:var(--ink2);line-height:1.5}
+.ycarrow{position:absolute;right:16px;top:50%;transform:translateY(-50%);color:var(--accent);font-size:16px;opacity:.5}
+.ydsec{margin-bottom:18px}
+.ydsechead{font-size:13px;font-weight:600;color:var(--accent);margin-bottom:11px;padding-bottom:7px;border-bottom:1px solid var(--hair)}
+.themecard{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--hair);border-radius:9px;padding:12px 15px;margin-bottom:8px}
+.themenum{flex:none;width:24px;height:24px;border-radius:7px;background:var(--accentsoft);color:var(--accent);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.themetxt{font-size:13.5px;color:var(--ink);line-height:1.5}
+.ydpending{display:flex;gap:10px;font-size:12.5px;color:var(--ink2);line-height:1.6;background:#fff8f0;border:1px dashed #e0b888;border-radius:9px;padding:13px 15px}
+.ydpending.big{padding:20px;font-size:13px}
+.pendicon{flex:none;color:#c77a3a;font-weight:700}
+@media(max-width:600px){.ycyear{font-size:19px}.themetxt{font-size:12.5px}.yearcard{padding:13px 15px}}
+/* 移动端:收窄知识卡左侧标签列,长标签自动换行,正文获得更多宽度 */
+@media(max-width:600px){
+  .kbsecs{grid-template-columns:60px 1fr;gap:8px 10px}
+  .seclabel{font-size:11px;white-space:normal;line-height:1.45;word-break:break-word}
+  .sectext{font-size:12.5px;padding-left:10px}
+  .kbcard{padding:13px 15px}
+  footer{font-size:12px;padding:30px 18px 26px;line-height:1.7}
+  footer .fnote{font-size:11px}
+}
+@media(max-width:380px){
+  .kbsecs{grid-template-columns:54px 1fr}
+  .seclabel{font-size:10.5px}
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="topin">
+  <div class="logo" onclick="goHome()" tabindex="0" role="button" aria-label="返回首页"><div class="logomark">沪</div><div class="logotext"><b>沪地知图</b><span>上海地理等级考 · 知识框架与考点</span></div></div>
+  <div class="topspace"></div>
+  <button class="tbtn" onclick="toggleDark()" id="darkBtn">◐</button>
+</div></header>
+
+<div id="lightbox" class="lightbox" onclick="closeFig()"><div class="lbinner" onclick="event.stopPropagation()"><div class="lbbar"><span id="lbname"></span><button class="lbclose" onclick="closeFig()">✕</button></div><div class="lbscroll"><img id="lbimg" src="" alt="真题原卷图"/></div></div></div>
+<div class="page on" id="page-home"><div class="wrap">
+  <div class="hero">
+    <div class="ey">沪 教 版 · 必 修 + 选 择 性 必 修</div>
+    <h1>上海地理等级考<br>知识框架 × 真题考点</h1>
+    <p>5 本教材完整知识脉络,叠加近年等级考真实考情。必修四成、选必六成,按《普通高中地理课程标准》梳理。</p>
+    <div class="herostats">
+      <div class="hstat"><b>5</b><span>教材模块</span></div>
+      <div class="hstat"><b>24</b><span>章节单元</span></div>
+      <div class="hstat"><b>84</b><span>核心知识点</span></div>
+      <div class="hstat"><b>19</b><span>高频考点</span></div>
+    </div>
+  </div>
+  <div class="sechead"><div class="bar"></div><h2>命题概览</h2><span class="note">基于历年考试院评析</span></div>
+  <div class="examcard" id="examOverview"></div>
+  <div class="sechead"><div class="bar"></div><h2>教材模块</h2><span class="note">点击进入,查看知识脉络与考情</span></div>
+  <div class="modgroup-label">必修 · 约占40%</div>
+  <div class="modgrid g2" id="modGridC"></div>
+  <div class="modgroup-label">选择性必修 · 约占60%</div>
+  <div class="modgrid g3" id="modGridE"></div>
+  <div class="sechead"><div class="bar"></div><h2>贯穿专题</h2><span class="note">横向串联多个模块的核心线索</span></div>
+  <div class="topicrow" id="topicRow"></div>
+  <div class="sechead"><div class="bar"></div><h2>真题演练</h2><span class="note">历年等级考真题,关联到知识点</span></div>
+  <div class="paperentry" id="paperEntry"></div>
+</div></div>
+
+<div class="page" id="page-module"><div class="wrap">
+  <div class="dhero">
+    <div class="dbar"><button class="backbtn" onclick="history.back()">← 返回</button><div class="crumb"><a href="#" onclick="goHome();return false">首页</a> ／ 教材模块</div></div>
+    <div class="dtitle"><span class="big" id="mTitle">地理1</span><span class="ds" id="mSub"></span><span class="dtag" id="mWeight"></span><span class="dfreq" id="mFreq"></span></div>
+  </div>
+  <div class="dintro" id="mIntro"></div>
+  <div id="mExam"></div>
+  <div class="sechead"><div class="bar"></div><h2>知识脉络</h2></div>
+  <div id="mChapters"></div>
+</div></div>
+
+<div class="page" id="page-topic"><div class="wrap">
+  <div class="dhero">
+    <div class="dbar"><button class="backbtn" onclick="history.back()">← 返回</button><div class="crumb"><a href="#" onclick="goHome();return false">首页</a> ／ 贯穿专题</div></div>
+    <div class="dtitle"><span class="big" id="tTitle">水</span><span class="ds" id="tSub"></span></div>
+  </div>
+  <div class="dintro" id="tIntro"></div>
+  <div id="tChain"></div>
+  <div class="sechead"><div class="bar"></div><h2>关联模块</h2></div>
+  <div class="tpmod" id="tMods"></div>
+</div></div>
+
+
+<div class="page" id="page-paper"><div class="wrap">
+  <div class="dhero">
+    <div class="dbar"><button class="backbtn" onclick="history.back()">← 返回</button><div class="crumb"><a href="#" onclick="goHome();return false">首页</a> ／ 真题演练</div></div>
+    <div class="dtitle"><span class="big" id="paperTitle" style="--dc:var(--accent)">真题</span></div>
+  </div>
+  <div class="dintro" id="paperNote" style="--dc:var(--accent)"></div>
+  <div id="paperList"></div>
+</div></div>
+
+<div class="page" id="page-years"><div class="wrap">
+  <div class="dhero">
+    <div class="dbar"><button class="backbtn" onclick="history.back()">← 返回</button><div class="crumb"><a href="#" onclick="goHome();return false">首页</a> ／ 历年真题</div></div>
+    <div class="dtitle"><span class="big" style="--dc:var(--accent)">历年真题</span><span class="ds">2016–2025 上海地理等级考</span></div>
+  </div>
+  <div class="dintro" style="--dc:var(--accent)">官方未公开完整真题。本栏目按年整理:已确认的考试主题与官方考情评析据上海市教育考试院公开信息;完整题目逐年补充中(2025年已完整收录)。</div>
+  <div id="yearsGrid"></div>
+</div></div>
+
+<div class="page" id="page-yeardetail"><div class="wrap">
+  <div class="dhero">
+    <div class="dbar"><button class="backbtn" onclick="history.back()">← 返回</button><div class="crumb"><a href="#" onclick="goHome();return false">首页</a> ／ <a href="#" onclick="openYears();return false">历年真题</a> ／ <span id="ydCrumb"></span></div></div>
+    <div class="dtitle"><span class="big" id="ydTitle" style="--dc:var(--accent)"></span><span class="ds" id="ydDate"></span></div>
+  </div>
+  <div class="dintro" id="ydNote" style="--dc:var(--accent)"></div>
+  <div id="ydThemes"></div>
+</div></div>
+<footer>沪地知图 · 上海地理等级考知识框架
+<div class="fnote">依据沪教版教材与2017版地理课标 · 仅供复习参考</div></footer>
+
+<script>
+// 上海高中地理等级考 知识框架数据
+// 5本教材:必修《地理1》《地理2》+ 选必一二三
+// 结构:模块(MODULE) → 章(chapters) → 知识点(points)
+// 第一步:教材知识结构(考情标注留待第二步)
+
+const MODULES = [
+  // ============ 必修《地理1》自然地理基础 ============
+  {
+    id: 'dl1',
+    name: '地理1',
+    full: '必修《地理1》',
+    sub: '自然地理基础',
+    cat: 'compulsory',   // 必修
+    weight: '必修约40%',
+    color: '#3a7a5a',    // 自然—绿
+    intro: '自然地理的入门与核心,围绕地球的宇宙环境与岩石圈、大气圈、水圈、生物圈四大圈层的物质运动与能量交换展开,是分析一切地理现象的原理工具。',
+    chapters: [
+      { t: '宇宙中的地球', points: [
+        '地球的宇宙环境(天体系统层级、太阳系八大行星)',
+        '地球的特殊性与存在生命的条件',
+        '太阳对地球的影响(太阳辐射的分布与影响、太阳活动及其影响)',
+        '地球的圈层结构(内部圈层:地壳/地幔/地核;外部圈层:大气/水/生物圈)',
+        '地球的演化历史(地质年代表、地层与化石、生物演化阶段)'
+      ]},
+      { t: '大气圈与天气、气候', points: [
+        '大气的组成与垂直分层(对流层/平流层/高层大气)',
+        '大气的受热过程(太阳暖大地、大地暖大气、大气还大地)',
+        '热力环流(海陆风、城市热岛、山谷风)',
+        '大气的水平运动——风(水平气压梯度力、地转偏向力、摩擦力)',
+        '气压带与风带(三圈环流、气压带风带的分布与季节移动)',
+        '常见天气系统(锋面:冷锋/暖锋/准静止锋;低压气旋/高压反气旋)',
+        '气候的形成因子与主要气候类型分布'
+      ]},
+      { t: '水圈与水循环', points: [
+        '水循环的过程与环节(蒸发、水汽输送、降水、径流、下渗)',
+        '水循环的地理意义',
+        '海水的性质(温度、盐度、密度)',
+        '海水的运动(波浪、潮汐、洋流)',
+        '世界洋流的分布规律与对地理环境的影响'
+      ]},
+      { t: '岩石圈与地表形态', points: [
+        '岩石圈的物质循环(三大类岩石、岩石圈物质循环过程)',
+        '内力作用与地貌(地壳运动、板块构造学说、地质构造:褶皱/断层)',
+        '外力作用与地貌(风化、侵蚀、搬运、堆积)',
+        '主要地貌类型(流水地貌、风成地貌、海岸地貌、喀斯特地貌等)',
+        '地貌与人类活动的相互影响'
+      ]},
+      { t: '自然地理要素的综合', points: [
+        '土壤的形成与主要影响因素',
+        '植被与自然环境的关系',
+        '主要植被类型与分布'
+      ]},
+      { t: '自然灾害', points: [
+        '气象灾害(台风、暴雨洪涝、干旱、寒潮)',
+        '地质灾害(地震、滑坡、泥石流)',
+        '自然灾害的防避'
+      ]}
+    ]
+  },
+
+  // ============ 必修《地理2》人文地理基础 ============
+  {
+    id: 'dl2',
+    name: '地理2',
+    full: '必修《地理2》',
+    sub: '人文地理基础',
+    cat: 'compulsory',
+    weight: '必修约40%',
+    color: '#c77a3a',    // 人文—橙
+    intro: '人文地理的核心框架,沿"人口—城乡—产业—交通—人地关系"的主线展开,关注人类活动的空间分布、区位选择及其与自然环境的协调。',
+    chapters: [
+      { t: '人口', points: [
+        '人口分布(世界与中国人口分布特点及影响因素)',
+        '人口迁移(概念、类型、影响因素、影响)',
+        '人口容量(资源环境承载力、人口合理容量)'
+      ]},
+      { t: '乡村和城镇', points: [
+        '乡村与城镇的空间结构(功能分区:住宅/商业/工业区)',
+        '地域文化与城乡景观',
+        '城镇化(进程、特点、对地理环境的影响)',
+        '城镇化过程中的问题与对策'
+      ]},
+      { t: '产业区位因素', points: [
+        '农业区位因素及其变化(自然因素与社会经济因素)',
+        '工业区位因素及其变化',
+        '服务业区位因素及其变化'
+      ]},
+      { t: '交通运输布局与区域发展', points: [
+        '运输方式与交通布局的影响因素',
+        '交通运输布局对区域发展的影响'
+      ]},
+      { t: '环境与发展', points: [
+        '人类面临的主要环境问题',
+        '走向人地协调——可持续发展',
+        '中国国家发展战略举例(海洋权益、一带一路、区域协调等)'
+      ]},
+      { t: '地理信息技术', points: [
+        '地理信息技术(3S)的应用(遥感RS、卫星导航GNSS/GPS、地理信息系统GIS、数字地球)'
+      ]}
+    ]
+  },
+
+  // ============ 选必一 自然地理基础 ============
+  {
+    id: 'xb1',
+    name: '选必一',
+    full: '选择性必修一',
+    sub: '自然地理基础',
+    cat: 'elective',
+    weight: '选必约60%',
+    color: '#2e6b8a',    // 深蓝
+    intro: '必修《地理1》的进阶深化,聚焦地球运动的地理意义,以及自然环境的整体性与差异性两大规律,是高阶自然地理分析的核心。',
+    chapters: [
+      { t: '地球的运动', points: [
+        '地球自转的地理意义(昼夜交替、地方时与时区、地转偏向)',
+        '地球公转的地理意义(黄赤交角、正午太阳高度变化、昼夜长短变化、四季与五带)',
+        '日照图的判读与计算'
+      ]},
+      { t: '自然环境的整体性', points: [
+        '自然环境的组成与物质能量交换',
+        '自然环境整体性的表现(牵一发而动全身)',
+        '自然环境对人类活动的影响'
+      ]},
+      { t: '自然环境的地域差异性', points: [
+        '地域分异的基本规律(由赤道到两极的地带性、从沿海到内陆的地带性、垂直地带性)',
+        '主要陆地自然带',
+        '地方性分异规律(非地带性)'
+      ]},
+      { t: '水与海—气相互作用', points: [
+        '海—气相互作用与水热交换',
+        '厄尔尼诺与拉尼娜现象(沃克环流)',
+        '陆地水体的相互补给关系'
+      ]}
+    ]
+  },
+
+  // ============ 选必二 区域发展 ============
+  {
+    id: 'xb2',
+    name: '选必二',
+    full: '选择性必修二',
+    sub: '区域发展',
+    cat: 'elective',
+    weight: '选必约60%',
+    color: '#8a5a9e',    // 紫
+    intro: '以"区域认知"为核心素养,研究不同类型区域的特征、发展条件与路径,涵盖区域差异、产业转移、资源调配、流域开发、城市辐射等综合议题,是综合题的主要情境来源。',
+    chapters: [
+      { t: '区域与区域发展', points: [
+        '区域的含义与类型',
+        '区域整体性、差异性与关联性',
+        '区域发展的自然环境基础与不同阶段',
+        '区域定位的基本方法(经纬网、海陆轮廓、地理特征综合定位)'
+      ]},
+      { t: '资源、环境与区域发展', points: [
+        '生态脆弱区的综合治理(荒漠化、水土流失等)',
+        '资源枯竭型城市的转型发展',
+        '产业结构转型地区的发展(老工业基地振兴)'
+      ]},
+      { t: '城市、产业与区域发展', points: [
+        '城市的辐射功能(以纽约、上海等为例)',
+        '地区产业结构变化',
+        '产业转移(影响因素、对区域发展的影响)'
+      ]},
+      { t: '区域联系与区域协调发展', points: [
+        '流域内部的协作开发(如田纳西河、长江流域)',
+        '资源跨区域调配(南水北调、西气东输、西电东送)',
+        '产业转移与区域协调(如长三角一体化、京津冀协同)',
+        '国际合作'
+      ]}
+    ]
+  },
+
+  // ============ 选必三 资源、环境与国家安全 ============
+  {
+    id: 'xb3',
+    name: '选必三',
+    full: '选择性必修三',
+    sub: '资源、环境与国家安全',
+    cat: 'elective',
+    weight: '选必约60%',
+    color: '#b5444a',    // 红
+    intro: '从国家安全的战略高度审视资源与环境问题,涵盖自然资源安全、环境安全、生态安全三大领域,树立总体国家安全观,是近年命题的新热点与思想升华。',
+    chapters: [
+      { t: '自然环境与人类社会', points: [
+        '自然环境的服务功能(供给、调节、文化、支撑服务)',
+        '自然资源及其利用',
+        '环境问题及其防治的基本认识'
+      ]},
+      { t: '资源安全与国家安全', points: [
+        '资源安全的认识(概念、影响因素)',
+        '中国的能源安全(煤炭、石油、新能源)',
+        '中国的耕地资源与粮食安全',
+        '海洋空间资源与国家安全'
+      ]},
+      { t: '环境安全与国家安全', points: [
+        '环境安全的认识',
+        '环境污染与国家安全(跨境污染、污染物转移)',
+        '生态保护与国家安全(生物多样性、生态修复)',
+        '全球气候变化与国家安全'
+      ]},
+      { t: '保障国家安全的资源、环境战略与行动', points: [
+        '走向生态文明',
+        '国家战略与政策(碳达峰、碳中和)',
+        '国际合作(全球环境治理、巴黎协定等)'
+      ]}
+    ]
+  }
+];
+
+// 跨模块专题(华夏纪"跨朝专题"的对应物)——地理知识的横向贯穿主线
+const CROSS_TOPICS = [
+  { id: 't_water', name: '水', sub: '贯穿自然与人文',
+    desc: '从水循环(地理1)→海水性质洋流(地理1)→水资源调配(选必二南水北调)→流域开发(选必二)→水安全,水是贯穿五册的核心线索。',
+    modules: ['dl1','xb2'] },
+  { id: 't_atmos', name: '大气与气候', sub: '原理到应用',
+    desc: '大气受热过程、热力环流、气压带风带(地理1)是原理基础;气候变化与国家安全(选必三)是时代延伸。',
+    modules: ['dl1','xb3'] },
+  { id: 't_region', name: '区域分析方法', sub: '综合题核心',
+    desc: '区域认知是上海等级考综合题的核心能力:区域特征描述→发展条件评价→问题与对策,贯穿选必二全部及人文地理。',
+    modules: ['dl2','xb2'] },
+  { id: 't_industry', name: '产业与区位', sub: '区位逻辑',
+    desc: '农业/工业/服务业区位(地理2)→产业转移与升级(选必二)→资源型城市转型,区位分析是高频考查逻辑。',
+    modules: ['dl2','xb2'] },
+  { id: 't_sustain', name: '人地协调与可持续', sub: '核心价值观',
+    desc: '环境问题与可持续发展(地理2)→生态脆弱区治理(选必二)→资源环境与国家安全(选必三),人地协调观是命题的价值主线。',
+    modules: ['dl2','xb2','xb3'] },
+  { id: 't_earth', name: '地球运动', sub: '自然地理难点',
+    desc: '地球自转公转的地理意义、日照图判读(选必一)是公认难点,也是区分度高的考点。',
+    modules: ['xb1'] }
+];
+
+
+
+// 上海地理等级考 考情数据(全部基于公开检索的官方评析与考点回顾,标注年份/来源)
+const EXAM_OVERVIEW = {
+  structure: '满分100分·60分钟。采用情境化命题,全卷由若干真实情境的综合大题构成,每个大题内部混合单选、不定项选择、填空与综合分析等题型;综合分析题分值高、是拉分关键。(以本站收录的2025年卷为例:5个情境大题、共30道小题)',
+  ratio: '自然地理与人文地理比例大致相当(各约50%,部分年份自然略多约54%)。必修约40%、选必约60%。',
+  trend: '近年命题持续"去死记硬背、重情境分析":选择题考基础概念与知识迁移,综合题以真实区域情境考查综合思维、地理过程分析、逻辑表达与学科术语。',
+  feature: '上海特色:综合题情境化、贴合热点(双碳、能源转型、荒漠化、乡村振兴等)、立足上海放眼全球;题型含作图、论述。',
+  src: '上海教育考试院历年试卷评析(2017/2019/2021/2025)'
+};
+const EXAM_DATA = {
+  dl1: {
+    freq:'高频·必考',
+    summary:'自然地理是选择题主力,几乎全面覆盖。从课内知识点出发,贴合生活实际,重知识迁移。',
+    hot:[
+      {p:'大气受热过程·热力环流',tag:'高频',detail:'大气结构、受热过程、气候类型反复出现,综合题常结合天气系统(如超强寒潮)。'},
+      {p:'水循环·洋流·河流补给',tag:'高频',detail:'河流补给类型、洋流分布、水循环环节是选择题常客。'},
+      {p:'岩石与板块·地貌',tag:'高频',detail:'三大类岩石、六大板块、地貌与等高线地形图判读,2021/2024均考。'},
+      {p:'气候类型判读',tag:'高频',detail:'气候类型分布与成因,结合区域情境考查。'}
+    ],
+    years:'2021(地貌/等高线/气候/河流补给/洋流)、2022(自然+人文要素组合考区位差异)、2024(泥石流滑坡/生态脆弱)、2025(气候/植被/地质地貌/自然灾害)',
+    src:'2021上海爱智康考点回顾、2022/2024真题解析、2025考试院评析'
+  },
+  dl2: {
+    freq:'高频·必考',
+    summary:'人文地理立足上海、放眼全球,贴合本地社会经济。死记硬背比例下降,重概念背后的逻辑与成因。',
+    hot:[
+      {p:'产业区位与特点',tag:'高频',detail:'农业/工业/服务业区位是核心逻辑,2021/2022/2024反复考查区位差异原因。'},
+      {p:'城市空间结构·城市问题',tag:'高频',detail:'城市功能分区、城镇化问题,常立足上海。'},
+      {p:'人口增长与迁移',tag:'常考',detail:'人口增长、迁移、环境人口容量。'},
+      {p:'地域文化·3S技术',tag:'常考',detail:'地域文化与3S(RS/GPS/GIS)技术应用。'}
+    ],
+    years:'2021(人口增长/城市问题/产业区位/国际贸易/地域文化/3S)、2022(区位差异)、2024(产业结构调整/区域辐射带动)',
+    src:'2021上海爱智康考点回顾、2022/2024真题解析'
+  },
+  xb1: {
+    freq:'高频·难点',
+    summary:'地球运动是公认难点与高区分度考点;地域分异规律是综合题常考主题。',
+    hot:[
+      {p:'地球运动(自转公转的地理意义)',tag:'难点高频',detail:'昼夜长短、正午太阳高度、日照图判读,是拉分点。2021选择题考地球运动。'},
+      {p:'地域分异规律',tag:'综合题高频',detail:'由赤道到两极/沿海到内陆/垂直地带性,是历年综合题反复出现的主题(2017/2019综合题均考)。'},
+      {p:'自然环境整体性',tag:'常考',detail:'"牵一发而动全身",结合区域分析。'}
+    ],
+    years:'2017(综合题:地域分异规律)、2019(综合题:地域分异规律)、2021(地球运动)',
+    src:'2017/2019考试院评析、2021考点回顾'
+  },
+  xb2: {
+    freq:'最高频·综合题核心',
+    summary:'区域差异分析是"每年必考"的核心命题点。综合题主要情境来源,考区域认知与综合思维。',
+    hot:[
+      {p:'区域差异与区位分析',tag:'每年必考',detail:'不同区域气候/农业/产业布局差异的成因分析,是地理考查的核心命题点,2022深化此方向。'},
+      {p:'区域开发与产业转型',tag:'高频',detail:'区域开发、产业结构调整、资源型城市转型,2017/2019综合题考"区域开发"。'},
+      {p:'生态脆弱区治理',tag:'高频',detail:'荒漠化、水土流失、生态脆弱性演化,2024考四川清平镇生态脆弱、2025考荒漠化治理。'},
+      {p:'区域辐射带动作用',tag:'常考',detail:'城市辐射、产业发展对区域的影响,2024考查。'}
+    ],
+    years:'2017/2019(综合题:区域开发)、2022(区域差异深化)、2024(生态脆弱/产业结构/区域辐射)、2025(荒漠化治理/乡村建设/区域发展)',
+    src:'2017/2019考试院评析、2022/2024真题解析、2025考试院评析'
+  },
+  xb3: {
+    freq:'高频·时代热点',
+    summary:'近年命题新热点,融入"双碳"、绿色发展、可持续发展理念。综合题常以能源转型、气候变化为情境。',
+    hot:[
+      {p:'能源转型·双碳目标',tag:'热点高频',detail:'能源转型、碳达峰碳中和、绿色发展,2025综合题典型案例。'},
+      {p:'资源安全(能源/粮食)',tag:'高频',detail:'能源安全、耕地与粮食安全。2019综合题考"全球资源、环境与可持续发展"。'},
+      {p:'全球气候变化与国家安全',tag:'高频',detail:'气候变化对国家安全的影响,贯穿可持续发展主线。'},
+      {p:'生态文明·可持续发展',tag:'价值主线',detail:'生态文明建设、人地协调,是命题的价值导向。'}
+    ],
+    years:'2019(综合题:全球资源环境与可持续发展)、2025(能源转型/双碳/绿色发展/可持续)',
+    src:'2019考试院评析、2025考试院评析'
+  }
+};
+
+
+
+var KB={"dl1":{"宇宙中的地球":[{"t":"地球的宇宙环境","secs":[["天体系统","宇宙中的天体相互吸引、相互绕转形成天体系统;层级由大到小为总星系→银河系(及河外星系)→太阳系→地月系。"],["八大行星","按距日由近及远为水、金、地、火、木、土、天王、海王;分为类地行星(水金地火)、巨行星(木土)、远日行星(天海)。"],["运动特征","八大行星公转具有同向性(自西向东)、共面性(轨道几乎在同一平面)、近圆性(轨道接近圆形)。"],["天体判断","恒星、行星、卫星、星云、彗星等都是天体;判断关键是位于地球大气层之外、能独立存在。"],["易错","待发射的人造卫星不是天体,进入轨道运行后才算;流星体是天体,落地后的陨石不是。"]]},{"t":"地球存在生命的条件","secs":[["外部条件","太阳光照长期稳定;大小行星各行其道、互不干扰,宇宙环境安全。"],["温度适宜","日地距离适中,使地表温度适宜,水多以液态形式存在。"],["大气条件","地球质量、体积适中,引力能吸住大气并经长期演化形成适合生物呼吸的大气。"],["液态水","原始海洋的形成为生命的起源和发展提供了场所。"],["核心","适宜的温度、液态水和适合呼吸的大气是地球存在生命的三大基本条件。"]]},{"t":"太阳对地球的影响","secs":[["太阳辐射","太阳以电磁波形式向四周放射能量,是地球光、热的主要来源,维持着水循环、大气运动和生命活动。"],["分布规律","太阳辐射量随纬度增高而递减,并受太阳高度、昼长、天气、海拔等影响。"],["太阳活动","主要标志是黑子(光球层,反映活动强弱)和耀斑(色球层,最剧烈),周期约11年,还有太阳风。"],["活动影响","扰动电离层影响短波通信、引发磁暴干扰指南针、在两极产生极光,并与气候(降水)波动有关。"],["易错","我国年太阳辐射最丰富区是青藏高原(海拔高、空气稀薄、晴天多),最贫乏区是四川盆地(阴雨多、云雾大)。"]]},{"t":"地球的圈层结构","secs":[["划分依据","据地震波速度的突变划分——横波只能在固体中传播、纵波在固液气中均可传播。"],["内部圈层","以莫霍面、古登堡面为界,分为地壳、地幔、地核;古登堡面以下横波消失,推测外核为液态。"],["岩石圈","岩石圈=地壳+上地幔顶部(软流层以上),是固体地球坚硬的外壳;软流层一般被认为是岩浆的主要发源地。"],["外部圈层","大气圈、水圈、生物圈相互联系、相互渗透,其中生物圈是最活跃的圈层。"],["易错","岩石圈≠地壳,它还包含上地幔顶部;地壳厚度不均,大陆厚、大洋薄。"]]},{"t":"地球的演化历史","secs":[["地质年代","按宙—代—纪划分;借助地层顺序与化石确定相对年代,一般地层越深越老。"],["化石与地层","化石是判断地层年代与古地理环境的依据,同一时代的地层往往含有相同或相似化石。"],["演化阶段","前寒武纪(原始生命)→古生代(海生无脊椎→鱼类→两栖,蕨类繁盛,末期三叶虫等大量灭绝)→中生代(爬行动物/恐龙、裸子植物繁盛,末期恐龙灭绝)→新生代(哺乳动物与被子植物繁盛、人类出现)。"],["成矿期","古生代后期与中生代是重要成煤期;海洋生物遗体在地层下陷处堆积埋藏,利于石油、天然气生成。"],["易错","地层年代靠下老上新判断,但地壳运动可造成地层倒置;化石组合比单一化石更可靠。"]]}],"大气圈与天气、气候":[{"t":"大气的组成与垂直分层","secs":[["组成","由干洁空气、水汽和杂质组成;氮约占78%、氧约占21%,CO₂能保温、臭氧吸收紫外线、水汽和杂质成云致雨。"],["对流层","集中约3/4大气和几乎全部水汽,气温随高度递减(平均每升100m降约0.6℃),对流旺盛,云雨雪等天气现象都发生在此。"],["平流层","气温随高度升高(臭氧吸收紫外线增温),以平流运动为主,水汽杂质少、天气晴朗,有利于高空飞行。"],["高层大气","气压低、密度小,其中的电离层能反射无线电短波,对无线电通信有重要意义。"],["易错","对流层厚度随纬度增大而减小(低纬约17—18km、高纬约8—9km),并随季节变化(夏厚冬薄)。"]]},{"t":"大气的受热过程","secs":[["三步过程","太阳短波辐射穿过大气晒热地面→地面以长波辐射把热量传给大气(地面是近地面大气的直接热源)→大气逆辐射把部分热量还给地面,起保温作用。"],["两大作用","削弱作用(反射、散射、吸收使白天气温不过高)与保温作用(大气逆辐射使夜间气温不过低)。"],["递减原因","地面是大气的直接热源,离地面越高获得地面长波辐射越少,故对流层气温随高度递减。"],["典型应用","可解释昼夜温差(晴天大、阴天小)、霜冻多发于晴朗微风夜晚、温室效应、青藏高原光照强而气温低、地膜与熏烟防冻。"],["易错","大气主要吸收的是地面长波辐射而非太阳短波辐射;CO₂增多主要增强的是保温(逆辐射)作用。"]]},{"t":"热力环流","secs":[["根本原因","地面冷热不均——受热处空气膨胀上升、冷却处空气收缩下沉。"],["形成过程","冷热不均→空气垂直运动→同一水平面产生气压差→近地面气流由高压流向低压,高低空气流方向相反,构成环流。"],["气压规律","近地面受热处为低压、冷却处为高压,高空气压高低与近地面相反;等压面凸高凹低。"],["典型实例","海陆风(白天海风、夜晚陆风)、城市热岛(气流由郊区流向城区)、山谷风(白天谷风、夜晚山风)。"],["地位","热力环流是大气运动最简单的形式,是理解一切大气运动的基础。"]]},{"t":"大气的水平运动——风","secs":[["三种力","水平气压梯度力(形成风的原动力,垂直于等压线、由高压指向低压)、地转偏向力(只改变风向、北右南左)、摩擦力(近地面才有,与风向相反)。"],["高空风","受气压梯度力和地转偏向力作用,风向最终平行于等压线。"],["近地面风","受三力共同作用,风向斜穿等压线、指向低压一侧。"],["判读","等压线越密集,气压梯度力越大、风力越大;先画气压梯度力,再据半球偏转定风向。"],["易错","地转偏向力在赤道为零;描述风向要说风的来向(偏北风指风从北方吹来)。"]]},{"t":"气压带与风带","secs":[["成因","由地表高低纬受热不均叠加地转偏向力,形成低、中、高纬三圈环流。"],["七个气压带","南北对称分布——赤道低压(热力上升)、副热带高压(动力下沉)、副极地低压(动力上升)、极地高压(热力下沉),共七个。"],["六个风带","信风带(由副高吹向赤道,北半球东北信风)、西风带(由副高吹向副极地,北半球西南风)、极地东风带。"],["季节移动","随太阳直射点南北移动,大致北半球夏季北移、冬季南移约5—10个纬度。"],["对气候影响","单一气压带或风带控制形成单一型气候(赤道低压→雨林、副高→沙漠、西风→温带海洋性),两者交替控制形成过渡型气候(地中海、热带草原)。"],["易错","海陆热力差异会把气压带切断成块状高低压中心(如亚洲高压、印度低压),这是季风形成的重要原因。"]]},{"t":"常见天气系统","secs":[["冷锋","冷气团主动移向暖气团,过境时大风、降温、雨雪,雨区主要在锋后,过境后气温降、气压升、转晴;我国北方夏季暴雨、冬季寒潮和沙尘暴多由其引起。"],["暖锋","暖气团主动移向冷气团,多连续性降水,雨区在锋前,过境后气温升、气压降、转晴。"],["准静止锋","冷暖气团势力相当、移动缓慢,造成持续阴雨,如初夏江淮梅雨、冬半年昆明准静止锋。"],["气旋/低压","中心气压低,气流向中心辐合上升,多阴雨天气,北半球逆时针、南半球顺时针,如台风。"],["反气旋/高压","中心气压高,气流下沉并向外辐散,多晴朗干燥天气,如长江中下游伏旱、北方秋高气爽。"],["易错","雨在锋后是冷锋、雨在锋前是暖锋;台风是强烈发展的热带气旋。"]]},{"t":"气候的形成因子与类型分布","secs":[["影响因子","纬度位置(热量基础)、大气环流(气压带风带与季风)、海陆位置、地形(迎风坡多雨、海拔影响气温)、洋流(暖流增温增湿、寒流降温减湿)。"],["气候要素","以气温和降水为核心,判读遵循以温定带、以水定型。"],["主要类型","热带(雨林、草原、季风、沙漠)、亚热带(地中海、季风性湿润)、温带(海洋性、季风、大陆性)、亚寒带与寒带。"],["判读步骤","先看最热月/最冷月气温定半球与温度带,再看降水量及季节分配定类型(雨热同期→季风、夏干冬雨→地中海、全年多雨→雨林或海洋性)。"],["易错","季风气候雨热同期、地中海气候雨热不同期;同纬度大陆东西岸气候差异大,需结合环流与洋流分析。"]]}],"水圈与水循环":[{"t":"水循环的过程与环节","secs":[["三种类型","海陆间循环(最重要,使陆地水得到补充更新)、陆地内循环、海上内循环。"],["主要环节","蒸发(蒸腾)、水汽输送、降水、地表径流、下渗、地下径流。"],["人类影响","主要影响地表径流环节——修水库调节径流季节分配、跨流域调水调节空间分布、植树造林与透水砖增加下渗、围湖造田削弱调蓄。"],["驱动能量","由太阳辐射能和重力能共同驱动,是地表物质迁移和能量交换的重要纽带。"],["易错","城市硬化路面使下渗减少、地表径流增大,易引发城市内涝。"]]},{"t":"水循环的地理意义","secs":[["维持平衡","维持着全球水量的动态平衡。"],["更新水体","促使陆地各种水体不断更新,使水资源具有可再生性。"],["联系圈层","把大气圈、水圈、岩石圈和生物圈联系起来,促进物质迁移与能量交换。"],["塑造地表","流水在循环过程中不断侵蚀、搬运、堆积,塑造着地表形态。"],["调节气候","通过水汽输送和潜热的释放与吸收,调节着全球的热量与水分分布。"]]},{"t":"海水的性质","secs":[["温度","表层水温随纬度增高而降低、随深度增加而降低(1000m以下变化很小);影响海洋生物分布与海运。"],["盐度","表层盐度从副热带海区向赤道和两极递减(副热带蒸发强、降水少,盐度最高);受蒸发、降水、入海径流、结冰融冰影响。"],["密度","与温度负相关、与盐度正相关;海水通常上层密度小、下层密度大。"],["极值海区","红海盐度最高(蒸发强、降水少、无大河注入),波罗的海盐度最低(纬度高蒸发弱、降水多、淡水汇入多)。"],["易错","盐度最高出现在南北回归线附近海区而非赤道;近岸盐度受径流影响明显。"]]},{"t":"海水的运动","secs":[["波浪","以风浪最常见;风暴潮和海啸(多由海底地震引发)破坏力大,危及沿海。"],["潮汐","由月球、太阳的引潮力引起的海水周期性涨落,一般一日两涨两落;影响航运、盐业、潮汐发电与滩涂养殖。"],["洋流","海水大规模、定向的流动,按性质分暖流和寒流,对气候、渔业、航运影响显著。"],["对生产生活","潮汐可发电、便于进出港和晒盐,波浪能也是清洁能源,但风暴潮、海啸危害大。"],["易错","潮汐与潮流不同;海啸是地震等引发的巨浪,不属于潮汐。"]]},{"t":"世界洋流的分布规律与影响","secs":[["分布规律","中低纬海区以副热带为中心,北半球顺时针、南半球逆时针;北半球中高纬海区呈逆时针;北印度洋为季风洋流(夏顺冬逆)。"],["对气候","暖流增温增湿(北大西洋暖流使西欧温和多雨)、寒流降温减湿(沿岸寒流加剧荒漠化)。"],["对渔场","寒暖流交汇处(北海道、纽芬兰、北海渔场)或上升流处(秘鲁渔场)海水扰动、饵料丰富,形成大渔场。"],["对航运与污染","顺流航行省时省燃料、逆流相反;洋流可加快污染物的扩散稀释,也会扩大污染范围。"],["易错","中低纬大陆东岸多暖流、西岸多寒流;判读先定半球与中低/中高纬,再定流向与性质。"]]}],"岩石圈与地表形态":[{"t":"岩石圈的物质循环","secs":[["三大类岩石","岩浆岩(侵入型花岗岩、喷出型玄武岩)、沉积岩(有层理、可含化石,如石灰岩、砂岩)、变质岩(有片理,如大理岩、片麻岩)。"],["循环过程","岩浆冷凝成岩浆岩;各类岩石经风化、侵蚀、搬运、沉积、固结成沉积岩;经高温高压变质成变质岩;各类岩石重熔再生为岩浆,周而复始。"],["能量来源","由地球内部热能和太阳辐射能共同推动。"],["判别方法","岩浆岩有矿物结晶或气孔、沉积岩有层理和化石、变质岩有片理构造。"],["易错","只有岩浆能直接生成岩浆岩;沉积岩可含化石,其他两类一般没有。"]]},{"t":"内力作用与地貌","secs":[["能量来源","来自地球内部,主要是放射性元素衰变产生的热能。"],["地壳运动","水平运动使岩层弯曲成褶皱山系或断裂成裂谷,垂直运动引起地表的隆起与凹陷。"],["板块构造","全球岩石圈分为六大板块;生长边界张裂(东非大裂谷、红海、大洋中脊)、消亡边界碰撞(喜马拉雅山、海沟与岛弧)。"],["地质构造","背斜(岩层上拱、核老翼新,利于储油气)、向斜(岩层下弯、核新翼老,利于储水);断层中地垒成块状山(华山)、地堑成凹陷(渭河平原、汾河谷地)。"],["易错","背斜顶部受张力易被侵蚀成谷、向斜槽部受挤压坚实反而成山,即地形倒置;找油气钻背斜、找水钻向斜。"]]},{"t":"外力作用与地貌","secs":[["能量来源","来自地球外部,主要是太阳辐射能(及重力能)。"],["四个环节","风化、侵蚀、搬运、堆积(沉积),总趋势是削高填低、使地表趋于平坦。"],["地域差异","湿润区以流水作用为主、干旱区以风力作用为主、高纬高山以冰川作用为主、沿海以海浪作用为主。"],["侵蚀与堆积","侵蚀地貌多在上游、迎风坡、源地;堆积地貌多在下游、背风坡、低洼处。"],["易错","风化≠风力作用——风化是就地破坏,侵蚀是外力对地表的破坏并带走物质。"]]},{"t":"主要地貌类型","secs":[["流水地貌","侵蚀形成V形谷、瀑布、峡谷;堆积形成山前冲积扇、河漫滩、河口三角洲。"],["风成地貌","风蚀形成风蚀蘑菇、雅丹;风积形成沙丘(迎风坡缓、背风坡陡,可判断风向)。"],["喀斯特地貌","可溶性岩石被流水溶蚀,地表有峰林、石芽、洼地,地下有溶洞、石笋、石钟乳。"],["海岸与冰川地貌","海蚀崖、海蚀柱;冰川作用形成U形谷、角峰、冰斗等。"],["易错","三角洲在河口、冲积扇在出山口,都是流水堆积;新月形沙丘的缓坡指示风的来向。"]]},{"t":"地貌与人类活动的相互影响","secs":[["对聚落","平原利于聚落集中、呈团块状、规模大;山区聚落多沿河谷分布、呈条带状、规模小。"],["对交通","平原交通线密、成本低;山区线路常沿等高线盘旋(之字形)、多桥隧,造价高、难度大。"],["对农业","平原宜耕作、山地宜林牧;坡度大小影响土地利用方式与水土保持。"],["人类改造","修筑梯田、围海造陆、开挖运河、采矿堆渣等会改变原有地貌,须注意生态后果。"],["易错","地貌影响交通线走向与密度,但科技进步(架桥、打隧道)可削弱地形的限制。"]]}],"自然地理要素的综合":[{"t":"土壤的形成与影响因素","secs":[["组成","由矿物质、有机质、水分、空气组成;肥力高低主要取决于有机质(腐殖质)含量。"],["成土因素","成土母质(提供矿物养分)、气候(水热影响风化与有机质分解)、生物(最活跃,提供有机质)、地形、时间。"],["生物作用","生物是土壤有机质的来源,加速了成土过程,是土壤形成中最活跃的因素。"],["人类影响","合理耕作可培肥(如水稻土),不合理利用会导致盐碱化、酸化、板结、肥力下降。"],["易错","陡坡土壤薄(易流失)、洼地土壤厚;热带雨林土壤反而贫瘠(淋溶强、养分多储存于植被)。"]]},{"t":"植被与自然环境的关系","secs":[["指示作用","植被是自然环境的一面镜子,能反映当地的水热状况(雨林指示高温多雨、荒漠指示干旱)。"],["环境对植被","水热条件决定植被类型与分布,光照、土壤也影响植被生长。"],["植被对环境","涵养水源、保持水土、调节气候、防风固沙、净化空气、维持生物多样性。"],["适应特征","不同植被有适应环境的形态,如荒漠植物根系发达、叶片退化,雨林植物有茎花、板根。"],["易错","阴坡阳坡、迎风背风坡的植被差异可反推地形与水热差异。"]]},{"t":"主要植被类型与分布","secs":[["森林","热带雨林、亚热带常绿阔叶林与常绿硬叶林、温带落叶阔叶林、亚寒带针叶林,分布于水分较充足地区。"],["草原","热带草原(萨瓦纳)和温带草原,分布于半湿润、半干旱地区。"],["荒漠植被","植株稀疏、耐旱,叶片退化或呈肉质,分布于干旱地区。"],["与气候对应","植被类型大体与气候、自然带一一对应(地中海气候→常绿硬叶林)。"],["易错","常绿阔叶林对应亚热带季风/湿润气候,常绿硬叶林对应地中海气候,二者不同。"]]}],"自然灾害":[{"t":"气象灾害","secs":[["台风","形成于热带、副热带洋面的强烈气旋,带来狂风、暴雨和风暴潮,主要影响我国东南沿海。"],["暴雨洪涝","持续性强降水叠加地势低平、排水不畅而成,主要威胁江河中下游平原。"],["干旱","长期降水偏少、蒸发旺盛导致,影响农业、供水和生态,华北春旱、长江中下游伏旱典型。"],["寒潮","强冷空气大规模南下,带来剧烈降温并伴大风、霜冻、雨雪冰冻,危害农业与交通。"],["易错","台风危害主要来自狂风、暴雨、风暴潮三方面;寒潮以剧烈降温为核心标志。"]]},{"t":"地质灾害","secs":[["地震","多发于板块交界处;震级表示能量大小、烈度表示破坏程度,一次地震只有一个震级却有多个烈度。"],["滑坡","山地斜坡上的岩土体在重力作用下整体下滑,多因坡陡、岩土松软、暴雨或人为开挖诱发。"],["泥石流","山区沟谷中含大量泥沙石块的特殊洪流,多由暴雨或冰雪融水触发,破坏力强。"],["关联性","地质灾害常连锁发生,如地震诱发滑坡、滑坡堵塞河道形成堰塞湖。"],["易错","烈度受震级、震源深度、震中距、地质条件和建筑质量等共同影响。"]]},{"t":"自然灾害的防避","secs":[["监测预警","建立监测网络与预报预警系统,及时发布灾害信息。"],["工程措施","修建护坡、堤坝、水库、避难场所等,抵御或减轻灾害。"],["非工程措施","合理规划与土地利用、宣传教育与应急演练、健全法规与灾害保险。"],["自救互救","掌握避险技能,如地震就近躲避、泥石流向垂直于沟谷方向的高处逃离。"],["易错","泥石流逃生应朝与泥石流前进方向垂直的两侧高处跑,不能顺沟上下跑。"]]}]},"dl2":{"人口":[{"t":"人口分布","secs":[["世界规律","集中分布于中低纬、近海、地势低平的平原;亚洲东部和南部、欧洲西部、北美东部为四大稠密区。"],["影响因素","自然因素(气候、地形、水源、土壤)和社会经济因素(经济水平、开发历史、交通、政策、文化)。"],["中国分布","以黑河—腾冲一线为界,东南半壁人口稠密、西北半壁稀疏。"],["趋势","人口持续向城市、经济发达地区和沿海地区集聚。"],["易错","自然条件影响人口分布的底色,但社会经济因素的作用日益增强。"]]},{"t":"人口迁移","secs":[["概念","人口居住地发生较长期或永久性改变的空间移动,分国际迁移与国内迁移。"],["影响因素","经济因素通常是主导,此外有政治、战争、社会文化、生态环境等,可用推力—拉力理论分析。"],["对迁入地","提供劳动力、促进经济与文化交流,但也加大资源环境与公共服务压力。"],["对迁出地","缓解人地矛盾、增加侨汇收入,但可能造成人才流失与留守问题。"],["易错","旅游、上班等短期往返不属于人口迁移;推力在迁出地、拉力在迁入地。"]]},{"t":"人口容量","secs":[["资源环境承载力","一定条件下资源、环境所能持续供养的最大人口数量,是一个极限值。"],["人口合理容量","按合理生活水平、能实现可持续发展的适度人口数量,小于承载力,是一个合理值。"],["影响因素","资源(首要因素)、科技水平、经济发展水平、地区开放程度、人均消费水平。"],["意义","为制定人口政策和区域规划提供依据。"],["易错","资源越丰富、科技越高、越开放,人口容量越大;消费水平越高,容量反而越小。"]]}],"乡村和城镇":[{"t":"乡村与城镇的空间结构","secs":[["主要功能区","住宅区(占地最广)、商业区(多在市中心和交通干线两侧、付租能力最强)、工业区(多在城市外缘、沿交通线)。"],["地租与分区","由市中心向外付租能力商业>住宅>工业,地租随距市中心增大而递减,共同决定功能分区。"],["合理布局","工业区应布局在盛行风下风向或与风向垂直的郊外、河流下游,并与居住区设卫生防护带。"],["乡村结构","乡村以农业用地和居住为主,公共服务设施较少,常沿河流、道路分布。"],["易错","商业区付租能力对距离最敏感,故占据市中心;住宅区是城市占地最广的功能区。"]]},{"t":"地域文化与城乡景观","secs":[["概念","地域文化是特定地域的人们在长期生产生活中形成的价值观、生活方式及其物质与非物质表现。"],["民居体现","反映自然环境与人文传统,如黄土高原窑洞(就地取材、冬暖夏凉)、江南水乡临水而居、福建土楼、傣族竹楼(湿热防潮)。"],["城市格局","体现文化理念,中国古都讲究中轴对称、方正布局、礼制秩序,欧美城市常以广场、教堂为中心。"],["乡村景观","农田形态、村落布局反映当地农业方式与聚居传统。"],["易错","地域文化既包括物质景观(民居、服饰),也包括非物质内容(价值观、习俗)。"]]},{"t":"城镇化","secs":[["概念","人口向城镇集聚、城镇数量增加和范围扩大、乡村地区转变为城镇地区的过程。"],["主要标志","城镇人口占总人口的比重上升(最重要指标)、城镇用地规模扩大、二三产业向城镇集聚。"],["动力","农村推力(人多地少、收入低)与城市拉力(就业多、收入高、设施完善)共同作用。"],["地区差异","发达国家起步早、水平高、速度慢并出现逆城市化;发展中国家起步晚、水平较低、速度快。"],["易错","衡量城镇化水平的核心指标是城镇人口比重,不是城市数量或面积。"]]},{"t":"城镇化问题与对策","secs":[["环境问题","大气、水、噪声、固体废弃物污染加剧,城市热岛效应明显。"],["社会问题","交通拥堵、住房紧张、就业困难、地价上涨、治安与贫富分化等城市病。"],["疏解对策","建设卫星城和新区、合理规划城市布局,分散主城区职能。"],["治理对策","完善基础设施、优先发展公共交通、治理污染、增加绿地、建设生态宜居与海绵城市。"],["易错","逆城市化是城镇化发展到高级阶段的表现,不等于城镇化的衰退。"]]}],"产业区位因素":[{"t":"农业区位因素及其变化","secs":[["自然因素","气候(光、热、水)、地形、土壤、水源,决定能不能种、适合种什么。"],["社会经济因素","市场(决定生产类型和规模)、交通、政策、科技、劳动力、地价。"],["因素变化","自然因素相对稳定、社会经济因素变化较快;科技进步(温室、保鲜、良种、滴灌)使农业对自然条件的依赖减弱。"],["区位选择","因地制宜——城郊发展乳畜业和园艺花卉,平原种植业,山地丘陵林牧业。"],["易错","市场和交通是影响农业区位变化最显著的因素;光照≠热量。"]]},{"t":"工业区位因素及其变化","secs":[["指向类型","原料、市场、动力、廉价劳动力、技术五种指向型,据主导因素选择布局。"],["主要因素","土地、原料、能源、水源、市场、交通、劳动力、技术、政策、信息、环境。"],["因素变化","原料和动力影响减弱,市场、交通、信息和技术影响增强,技术指向型工业增多。"],["环境因素","大气污染工厂布局在盛行风下风向或与风向垂直的郊外,水污染工厂布局在河流下游。"],["易错","区分原料指向(制糖、水产品加工等原料不便运输/易变质)与市场指向(家具、印刷、瓶装饮料等产品不便运输)。"]]},{"t":"服务业区位因素及其变化","secs":[["特点","直接面向消费者,布局趋向市场和人口密集区,讲究接近消费者。"],["主要因素","市场(人口规模与消费水平)、交通、地价、集聚效应、政策、信息。"],["类型差异","生活性服务业接近居民区,生产性服务业(金融、研发)趋向中心城区或集聚区。"],["因素变化","网络与现代物流的发展使电商等部分服务业布局更加灵活,可摆脱地段限制。"],["易错","服务业区位与城市功能分区相关——商业区付租能力最强故占据市中心。"]]}],"交通运输布局与区域发展":[{"t":"运输方式与交通布局的影响因素","secs":[["五种方式","铁路、公路、水运、航空、管道,在运量、运速、运价、连续性、灵活性上各有特点。"],["布局因素","经济因素是主导,还受社会、技术、自然(地形、河流、地质)因素影响。"],["布局原则","依据运输需求、适应经济发展、安全可靠、节约成本、少占耕地、保护生态。"],["方式选择","贵重急需且量小选航空、大宗笨重且远距离选水运或铁路、量小近距离选公路、流体连续选管道。"],["易错","同等条件下经济因素决定交通线建不建、建在哪,技术使其建得成。"]]},{"t":"交通运输布局对区域发展的影响","secs":[["促进发展","带动沿线资源开发与产业集聚,促进商品流通和区域经济增长。"],["影响聚落","聚落往往沿交通线分布、扩展,交通枢纽常发展成为城市。"],["影响商业网点","商业网点选址趋向交通便利、人流集中处,交通变化会引起商业中心的兴衰转移。"],["双向性","交通既促进发展,布局不当或衰落也会制约区域发展(运河淤塞、线路改道导致城镇衰落)。"],["易错","交通线变化可能使原有商业中心衰落、新枢纽兴起(株洲、石家庄因铁路而兴)。"]]}],"环境与发展":[{"t":"人类面临的主要环境问题","secs":[["类型","环境污染(大气、水、土壤、噪声、固废)、生态破坏(水土流失、荒漠化、生物多样性减少)、资源短缺。"],["全球性问题","全球气候变暖、臭氧层破坏、酸雨等具有跨国界、全球性特征。"],["产生原因","人口增长压力、资源不合理利用、片面追求经济增长,实质是人地关系不协调。"],["分布差异","城市以环境污染为主、乡村以生态破坏为主;发达国家与发展中国家面临的问题各有侧重。"],["易错","环境问题的实质是发展问题,需要在发展中解决。"]]},{"t":"走向人地协调——可持续发展","secs":[["内涵","既满足当代人的需要,又不损害后代人满足其需要的能力;包含生态、经济、社会三方面的持续发展。"],["基本原则","公平性(代际、代内、人与其他物种)、持续性、共同性。"],["实现途径","发展循环经济(清洁生产、生态农业)、节能减排、绿色消费、公众参与。"],["人地关系演变","从崇拜自然→改造自然→征服自然→谋求人地协调。"],["易错","生态可持续是基础和前提;三个原则与三方面持续发展要区分清楚。"]]},{"t":"中国国家发展战略举例","secs":[["海洋强国","维护领海、专属经济区等海洋国土与资源权益,建设海洋强国。"],["一带一路","推进互联互通、国际产能合作,实现互利共赢、共建人类命运共同体。"],["区域协调","京津冀协同、长三角一体化、长江经济带、粤港澳大湾区、乡村振兴等促进区域均衡。"],["主体功能区","按资源环境承载力划分优化、重点、限制、禁止开发区,因地制宜布局。"],["易错","区域协调旨在缩小差距、优势互补,而非追求各地一致。"]]}],"地理信息技术":[{"t":"地理信息技术(3S)的应用","secs":[["遥感RS","远距离感知地物、获取影像与数据,用于资源普查、灾害与环境监测、农情与军事侦察——核心是获取/看。"],["导航GPS","提供全天候的定位、导航与授时,用于车辆导航、野外测量、精准农业、应急救援——核心是定位/导航。"],["系统GIS","对空间数据进行存储、管理、叠加分析并辅助决策,用于选址、灾害评估、城市规划与人口统计——核心是分析/处理。"],["数字地球","以数字化方式整合海量地理信息,实现地理环境的虚拟再现、查询与共享。"],["易错","监测动态变化用RS、确定位置用GPS、统计叠加分析用GIS;三者常综合使用。"]]}]},"xb1":{"地球的运动":[{"t":"地球自转的地理意义","secs":[["基本特征","绕地轴自西向东旋转,周期为1恒星日(23时56分4秒);角速度除极点外处处相等,线速度由赤道向两极递减、随海拔升高而增大。"],["昼夜交替","昼夜更替周期为1太阳日(24小时),晨昏线把地球分为昼半球和夜半球。"],["地方时与时区","经度每相差15°地方时相差1小时、每1°相差4分钟,东边时刻早于西边;全球分24个时区,相邻时区相差1小时。"],["地转偏向","沿地表水平运动的物体方向发生偏转,北右南左、赤道不偏,影响风向、洋流、河岸冲淤。"],["易错","顺自转方向过晨线进入昼半球;过日界线东减西加、日期东早西晚,要细心计算。"]]},{"t":"地球公转的地理意义","secs":[["基本特征","绕日自西向东公转,周期1恒星年;1月初过近日点(速度快)、7月初过远日点(速度慢)。"],["黄赤交角","黄道面与赤道面之间约23°26′的夹角,使太阳直射点在南北回归线之间往返移动。"],["正午太阳高度","由直射点所在纬线向南北两侧递减;夏至日北回归线及以北达全年最大、南半球达最小。"],["昼夜长短","太阳直射的半球昼长夜短且纬度越高昼越长;夏至日北半球昼最长、北极圈内出现极昼。"],["四季与五带","中纬度地区四季分明;以南北回归线、南北极圈为界划分热带、南北温带、南北寒带。"],["易错","正午太阳高度H=90°−当地纬度与直射点纬度之差的绝对值;太阳直射点北移时北半球昼渐长。"]]},{"t":"日照图的判读与计算","secs":[["定方向","据地球自转方向(北逆南顺)判断东西,据极点或自转方向判断南北半球。"],["找特殊点线","确定晨昏线、直射点经线(地方时12时)、晨昏线与赤道交点(地方时6时和18时)。"],["时间计算","据经度差算地方时与时区;昼长=昼弧度数÷15°(小时);日出=12−昼长/2、日落=12+昼长/2。"],["节气判断","晨昏线与极圈相切且北极圈内极昼为夏至、极夜为冬至,晨昏线过极点为二分。"],["易错","判读要按方向→节气→时间→高度的固定流程;极昼区正午太阳高度与午夜太阳高度不同。"]]}],"自然环境的整体性":[{"t":"自然环境的组成与物质能量交换","secs":[["组成要素","大气、水、岩石(地貌)、生物、土壤五大要素相互联系、相互渗透。"],["物质能量交换","各要素通过水循环、生物循环、岩石圈物质循环进行物质迁移与能量交换,形成统一整体。"],["生产功能","各要素共同合成有机物的能力(主要依赖光合作用),是整体性的体现。"],["平衡功能","各要素通过物质能量交换,使自然环境具有自我调节、保持相对稳定的能力。"],["易错","生产功能和平衡功能都是整体功能,单个要素无法独立完成。"]]},{"t":"自然环境整体性的表现","secs":[["统一演化","各要素的发展演化是统一、协调的(黄土高原水土流失使地貌、土壤、植被、水文同步变化)。"],["牵一发而动全身","某一要素的变化会导致其他要素乃至整个环境的改变(森林破坏→水土流失→河流含沙量增大→下游淤积)。"],["跨区域影响","一个区域的变化会影响其他区域(黄河上中游植被破坏影响下游)。"],["对生产意义","提醒人类活动要考虑对整个环境的连锁影响,避免顾此失彼。"],["易错","整体性强调相互联系、相互制约,分析时要顺着因果链推导各要素变化。"]]},{"t":"自然环境对人类活动的影响","secs":[["提供资源","提供土地、水、矿产、生物、能源等生产生活资源。"],["影响生产生活","地形、气候、水源影响农业类型、工业布局、聚落选址与交通线走向。"],["制约发展","资源环境承载力限制人口与经济规模,生态脆弱区开发受限。"],["双向作用","人类须遵循整体性规律合理利用,过度开发会引发连锁退化、反过来制约人类。"],["易错","自然环境对人类既是基础与机遇也是约束与风险,要辩证看待。"]]}],"自然环境的地域差异性":[{"t":"地域分异的基本规律","secs":[["纬度地带性","以热量为基础,自然带大致东西延伸、南北更替(低纬雨林→中纬森林→高纬苔原)。"],["干湿度地带性","以水分为基础,自然带大致南北延伸、东西更替(森林→草原→荒漠)。"],["垂直地带性","随海拔升高水热变化,自然带自下而上更替;山麓自然带与当地水平自然带一致,纬度越低、山越高,带谱越完整。"],["规律成因","地表水热条件的纬度差异、海陆差异和垂直差异分别导致三种地带性。"],["易错","雪线高度受气温(纬度、坡向)和降水共同影响——阳坡气温高雪线高、迎风坡降水多雪线低。"]]},{"t":"主要陆地自然带","secs":[["构成","由气候、植被、土壤、动物等相互联系构成统一的自然带,以植被(或气候)为标志命名。"],["对应关系","如热带雨林气候→热带雨林带→砖红壤,温带季风气候→温带落叶阔叶林带→棕壤,地中海气候→亚热带常绿硬叶林带。"],["主要类型","热带雨林带、热带草原带、热带荒漠带、亚热带常绿林带、温带落叶阔叶林带、温带草原带、温带荒漠带、亚寒带针叶林带、苔原带、冰原带。"],["分布规律","大体沿纬度更替(热量主导)或沿经度更替(水分主导)。"],["易错","同一自然带可对应多种气候(温带落叶阔叶林对应温带季风和温带海洋性气候)。"]]},{"t":"地方性分异规律(非地带性)","secs":[["概念","受海陆分布、地形起伏、洋流、局部水源或岩性等非地带性因素影响,使自然带偏离理论的地带性分布。"],["缺失型","南半球中高纬因缺少陆地而缺失苔原带和亚寒带针叶林带。"],["改变型","安第斯山南段东西两侧植被迥异;南美西海岸狭长的荒漠因秘鲁寒流而南北延伸。"],["局地型","干旱区因高山冰雪融水形成绿洲;马达加斯加岛东侧因暖流与地形迎风出现热带雨林。"],["易错","判断时先看理论上应是什么带,再看实际偏离及其非地带性原因。"]]}],"水与海—气相互作用":[{"t":"海—气相互作用与水热交换","secs":[["水分交换","海洋通过蒸发向大气输送水汽,大气以降水形式把水分归还海洋;低纬海区水温高、蒸发旺盛,水分交换最活跃。"],["热量交换","海洋是大气最主要的热量来源,以潜热、长波辐射和感热把热量输送给大气;海水比热大,对沿海气候有调节作用。"],["调节气候","海洋吸收并储存大量热量,通过洋流和大气环流把热量从低纬输送到高纬,缓和了全球温差。"],["全球意义","海气相互作用驱动着全球水循环与大气环流,维持着全球水量与热量平衡。"],["易错","海洋既是大气水汽的主要来源,也是大气热量的主要来源。"]]},{"t":"厄尔尼诺与拉尼娜现象","secs":[["正常状态","赤道太平洋东信风把表层暖水吹向西岸,东岸出现上升流(秘鲁渔场),呈西暖东冷。"],["厄尔尼诺","东信风减弱,东太平洋海温异常升高、上升流减弱→秘鲁渔场减产,南美西岸多雨洪涝,澳大利亚、印尼一侧干旱甚至火灾。"],["拉尼娜","东信风异常增强,东太平洋海温异常偏低,影响大体与厄尔尼诺相反。"],["沃克环流","赤道太平洋上空东西向的热力环流,厄尔尼诺时减弱甚至反向、拉尼娜时增强。"],["易错","厄尔尼诺=东太平洋异常增温(不是变冷);其影响通过海气相互作用波及全球,是牵一发而动全身的典型。"]]},{"t":"陆地水体的相互补给关系","secs":[["补给类型","河流补给有雨水(最普遍)、季节性积雪融水(春汛)、冰川融水(夏汛、与气温正相关)、湖泊水、地下水。"],["河湖互补","汛期河流水位高于湖泊和潜水位时,河水补给湖泊与地下水;枯水期水位低时,则由湖泊、地下水补给河流。"],["湖泊调节","湖泊和水库对河流径流有削峰补枯的调蓄作用,使径流变化趋于平缓。"],["判读方法","据径流量季节变化曲线判断补给类型,据河、湖、潜水位的相对高低判断补给方向。"],["易错","冰川融水补给量与气温正相关(夏季多)、与降水无关;雨水补给与降水量同步变化。"]]}]},"xb2":{"区域与区域发展":[{"t":"区域的含义与类型","secs":[["概念","区域是人们在地理差异的基础上划分出来的、具有一定范围和区位特征的地理空间。"],["类型","按性质分均质区与功能区,按尺度分大中小,按指标分自然区、经济区、行政区等。"],["基本特征","整体性、差异性、开放性(关联性)、层次性与动态性。"],["划分目的","便于因地制宜地认识、利用和管理不同区域。"],["易错","区域既有明确边界(行政区),也有过渡性的模糊边界(气候区、干湿区)。"]]},{"t":"区域整体性、差异性与关联性","secs":[["整体性","区域内部各自然和人文要素相互联系、相互影响,构成一个有机整体。"],["差异性","区域之间在自然条件、经济发展、文化等方面存在差异,这是区域分工与联系的基础。"],["关联性","区域之间通过人流、物流、资金流、信息流等相互联系、相互影响。"],["应用","区域差异分析是综合题的核心——比较两区域差异并解释成因。"],["易错","整体性看区域内部,差异性和关联性看区域之间;差异是分工合作的前提。"]]},{"t":"区域发展的自然环境基础与阶段","secs":[["自然环境基础","资源、地形、气候、水源等自然条件影响区域发展的方向、水平和潜力。"],["发展阶段","一般经历初期(开发利用)、成长(资源密集开发)、转型(资源枯竭、问题显现)、再生(产业升级)四个阶段。"],["人地关系演变","随发展阶段由基本协调→渐趋紧张→走向新的协调。"],["因地制宜","区域发展要立足自然环境基础、扬长避短、动态调整。"],["易错","自然条件是基础但非决定因素,社会经济条件和科技、政策同样关键。"]]},{"t":"区域定位的基本方法","secs":[["经纬网定位","据经纬度确定半球、温度带和大致位置,最精确;须熟记关键经纬线(赤道、南北回归线、本初子午线、180°等)。"],["海陆轮廓定位","据大洲大洋轮廓、海岸线走向、岛屿与半岛形状识别区域。"],["地理特征定位","据气候、河流、地形、植被及著名地物等特征综合推断区域所在。"],["相对位置定位","据与已知地理事物(山脉、河流、城市)的相对方位辅助判断。"],["易错","陌生区域综合题要先定位、再分析;经纬度判断半球与季节是审题前提,定位错则后续推理全盘皆错。"]]}],"资源、环境与区域发展":[{"t":"生态脆弱区的综合治理","secs":[["脆弱区特征","生态环境抗干扰能力弱、受破坏后难以恢复,如荒漠化区、石漠化区、水土流失区。"],["荒漠化成因","自然原因(气候干旱、大风频繁、植被稀疏、土质疏松)叠加人为原因(过度放牧、樵采、开垦、水资源利用不当),人为是主导。"],["治理措施","生物措施(植树种草、退耕还林还草)+工程措施(草方格沙障、水利)+管理措施(合理用水、控制人口、调整产业、禁牧轮牧)。"],["典型实例","西北地区荒漠化、黄土高原水土流失、南方喀斯特石漠化。"],["易错","治理要因地制宜、防治结合,抓主导成因对症下药;措施分生物/工程/管理三类更全面。"]]},{"t":"资源枯竭型城市的转型","secs":[["主要问题","资源趋于枯竭、产业结构单一、经济衰退、失业增多、环境污染严重。"],["转型方向","发展接续替代产业、延长产业链、培育新兴产业与第三产业(旅游、物流)、改善环境、再就业培训与社会保障。"],["典型实例","德国鲁尔区、我国东北煤城、焦作(由煤城转向旅游城市)。"],["关键","产业多元化与升级、修复生态、引进人才与技术。"],["易错","转型不是放弃原有基础,而是依托原有条件实现产业升级与多元化。"]]},{"t":"产业结构转型地区的发展","secs":[["背景","传统老工业基地技术落后、能耗高、污染重、竞争力下降,需进行结构调整。"],["调整措施","改造提升传统产业、发展新兴产业与现代服务业、推动科技创新、治理污染、完善基础设施。"],["典型实例","德国鲁尔区综合整治、辽中南老工业基地振兴、上海产业转型升级。"],["发展方向","由资源/劳动密集型向技术/知识密集型转变,提高附加值。"],["易错","老工业基地振兴要兼顾产业升级与生态环境治理,不能只追求增长。"]]}],"城市、产业与区域发展":[{"t":"城市的辐射功能","secs":[["辐射机制","大城市凭借资金、技术、信息、人才优势,通过产业扩散和要素流动带动周边地区发展。"],["等级与服务","城市等级越高,提供的服务种类越多、范围越大,但同等级城市数目越少、相距越远。"],["辐射与集聚","城市既向周边辐射扩散,又集聚周边的人口、资源与生产要素,两者并存。"],["典型实例","纽约对美国东北部、上海对长三角的辐射带动。"],["易错","辐射带动是双向的——既扩散资金技术、也吸引周边资源,需辩证分析利弊。"]]},{"t":"地区产业结构变化","secs":[["一般规律","随经济发展,产业重心由第一产业为主→第二产业为主→第三产业为主转移。"],["衡量指标","三次产业的产值比重和就业比重的变化。"],["影响因素","资源条件、技术水平、市场需求、政策导向、劳动力素质。"],["优化方向","延长产业链、提高附加值,发展高新技术产业和现代服务业。"],["易错","产业结构升级看第三产业(尤其高端服务业)比重上升,而非单纯第二产业增长。"]]},{"t":"产业转移","secs":[["概念","企业将部分或全部生产由一个地区转移到另一个地区,含国际转移和国内转移。"],["影响因素","劳动力成本、内部交易成本、市场、地价、政策、环境与资源。"],["对转入地","促进经济发展、增加就业、推动工业化与城镇化,但可能带来环境污染和资源消耗。"],["对转出地","腾出空间发展高新产业、利于产业升级(腾笼换鸟),但可能短期失业与经济波动。"],["易错","转移的多是成熟期或衰退期的劳动/资源密集型产业;分析影响要对转入、转出双方辩证作答。"]]}],"区域联系与区域协调发展":[{"t":"流域内部的协作开发","secs":[["流域特征","上中下游自然条件和功能不同、具有整体性,开发须统筹兼顾、协调各河段。"],["分段开发","上游保护生态、开发水能,中游防洪灌溉、发展工农业,下游航运供水、防治污染。"],["综合治理","兼顾防洪、发电、航运、灌溉、养殖、旅游和生态等多重目标。"],["典型实例","美国田纳西河流域综合开发、我国长江流域开发与保护。"],["易错","流域开发综合题要分河段作答,并平衡开发与生态保护的关系。"]]},{"t":"资源跨区域调配","secs":[["调配原因","自然资源的区域分布不均与消费需求的空间错位(供需矛盾)。"],["对调入地","缓解资源短缺、促进经济发展、改善环境与能源结构。"],["对调出地","把资源优势转化为经济优势、带动相关产业,但要防止生态破坏。"],["典型实例","南水北调、西气东输、西电东送、北煤南运。"],["易错","分析意义要兼顾调入、调出双方及沿线地区,并考虑生态影响。"]]},{"t":"产业转移与区域协调","secs":[["协调机制","发达地区转出成熟产业、欠发达地区承接产业,实现优势互补、协同发展。"],["典型实例","长三角一体化、京津冀协同发展、粤港澳大湾区、东部产业向中西部转移。"],["意义","缩小区域发展差距、优化资源配置、促进共同富裕和区域协调发展。"],["注意问题","承接地要防止污染转移、避免低水平重复建设,做好配套与环保。"],["易错","区域协调追求优势互补、错位发展,而非各地产业雷同。"]]},{"t":"国际合作","secs":[["必要性","资源、市场、技术、环境等问题具有全球性,各国相互依存,需要国际合作。"],["合作形式","国际贸易、投资、技术合作、共建项目(如一带一路的基础设施与产能合作)。"],["意义","实现优势互补、互利共赢,促进全球资源优化配置与共同发展。"],["中国角色","积极参与并推动全球经济合作,构建开放型世界经济和人类命运共同体。"],["易错","国际合作以平等互利为基础,强调互利共赢而非单方受益。"]]}]},"xb3":{"自然环境与人类社会":[{"t":"自然环境的服务功能","secs":[["供给服务","提供食物、原料、淡水、能源等物质产品。"],["调节服务","调节气候、净化空气和水质、涵养水源、防洪、固碳、减灾防灾。"],["文化服务","提供休闲娱乐、审美体验、科研教育和精神文化价值。"],["支撑服务","维持养分循环、土壤形成和初级生产,是其他三类功能的基础。"],["易错","四类服务中支撑服务是基础;过度索取供给服务会削弱调节和支撑功能。"]]},{"t":"自然资源及其利用","secs":[["分类","按能否再生分为可再生资源(水、土地、生物、气候)和非可再生资源(矿产、化石能源)。"],["利用历史","随生产力提高,人类利用资源的种类、数量和强度不断增加,相应的环境问题随之出现。"],["时空特征","自然资源在数量上有限、分布上不均,需要合理调配与利用。"],["可持续利用","可再生资源的开发不超过其更新速度,非可再生资源要节约、提高利用率并寻找替代品。"],["易错","可再生资源若利用不当(过度捕捞、超采地下水)也会枯竭或退化。"]]},{"t":"环境问题及其防治","secs":[["实质","人类向环境索取资源、排放废物的数量超过了环境的供给能力和自净能力。"],["主要表现","资源短缺、环境污染和生态破坏。"],["产生原因","人口压力、不合理的生产生活方式、片面追求经济增长。"],["防治途径","源头预防、过程控制、末端治理相结合,发展循环经济,走可持续发展之路。"],["易错","治理环境问题应以预防为主、防治结合,实质是协调好人地关系。"]]}],"资源安全与国家安全":[{"t":"资源安全的认识","secs":[["概念","一个国家或地区能够持续、稳定、及时、经济地获取所需自然资源的状态。"],["影响因素","资源储量与品质、生产供给能力、进口依存度、运输通道安全和国际形势。"],["数量与质量","既要保证资源数量充足,也要保证质量合格、获取过程经济可控。"],["维护途径","开源(勘探挖潜、进口多元化)、节流(节约集约、循环利用、寻找替代)、建立战略储备。"],["易错","资源安全强调持续稳定地获取,进口依存度过高、运输通道受制都会威胁资源安全。"]]},{"t":"中国的能源安全","secs":[["能源现状","能源消费以煤为主,呈富煤、贫油、少气格局,石油对外依存度高。"],["面临风险","石油进口来源集中、海上运输通道(如马六甲海峡)受制、国际能源价格波动。"],["保障措施","节能提效、优化能源结构(发展水核风光等清洁能源)、进口来源与通道多元化、建立战略石油储备、加强国际合作。"],["发展方向","推动能源消费革命和清洁低碳转型,服务双碳目标。"],["易错","保障能源安全要开源、节流、储备、多元化多管齐下,核心是降低对单一来源/通道的依赖。"]]},{"t":"中国的耕地资源与粮食安全","secs":[["基本形势","人多地少,耕地总量大但人均少,且面临耕地减少与质量退化的双重压力。"],["主要威胁","城镇化与建设占用耕地、水土流失与盐碱化污染、后备耕地不足。"],["保障措施","严守18亿亩耕地红线、保护耕地质量(高标准农田)、依靠科技提高单产、节约粮食、适度进口与建立储备。"],["战略意义","把饭碗牢牢端在自己手中,粮食安全是国家安全的基础。"],["易错","粮食安全靠保面积、提单产、减损耗、稳进口综合保障,核心是守住耕地红线和提高产能。"]]},{"t":"海洋空间资源与国家安全","secs":[["资源价值","海洋提供航运空间、渔业、油气与矿产、海洋能及填海造陆等空间资源,具有重要战略地位。"],["海洋权益","包括领海、毗连区、专属经济区、大陆架等海洋国土与资源权益。"],["面临挑战","海洋划界争端、资源争夺、生态破坏与海洋污染。"],["维护途径","建设海洋强国,依法维护海洋权益,坚持开发与保护并重。"],["易错","专属经济区不等于领海,沿海国对其享有资源主权权利而非完全主权。"]]}],"环境安全与国家安全":[{"t":"环境安全的认识","secs":[["概念","环境状况能够支撑人类生存与发展、不对国家和社会构成威胁的状态。"],["特点","具有整体性、跨国性、长期性和累积性。"],["与国家安全关系","严重的环境问题可演变为影响经济发展、社会稳定乃至国家安全的问题。"],["维护途径","加强监测预警、源头防控、国际合作,提升环境治理能力。"],["易错","环境安全问题往往跨越国界、影响长远,需要区域和全球协作应对。"]]},{"t":"环境污染与国家安全","secs":[["跨境污染","大气污染(酸雨)、跨界河流和海洋污染等会跨越国界传播,引发国家间矛盾。"],["污染转移","发达国家通过转移污染产业、出口危险废物等方式向发展中国家转移污染。"],["对国家安全影响","污染威胁居民健康、损害资源与生态,可能引发社会问题和国际争端。"],["应对措施","加强监测与立法、防范污染产业和废物转入、积极开展国际环境合作。"],["易错","我国要警惕以投资、贸易为名的污染产业和危险废物转移。"]]},{"t":"生态保护与国家安全","secs":[["生态威胁","生物多样性减少、物种灭绝、生态系统退化危及生态安全。"],["保护措施","退耕还林还草、湿地与天然林保护、建立自然保护区和国家公园、划定生态保护红线。"],["生态修复","对受损生态系统进行人工修复与自然恢复相结合。"],["意义","维护生态平衡、保障国土生态安全屏障和区域可持续发展。"],["易错","生态保护红线是不可逾越的底线,体现生态优先、保护为主。"]]},{"t":"全球气候变化与国家安全","secs":[["主要影响","海平面上升淹没沿海低地、极端天气增多、农业减产、水资源时空变化、生态系统退化。"],["对国家安全影响","威胁粮食、水资源和能源安全,可能引发生态难民和资源争端。"],["应对策略","减缓(节能减排、增加碳汇)与适应(防灾减灾、调整产业与农业布局)相结合,并加强国际合作。"],["国际行动","《联合国气候变化框架公约》《巴黎协定》等推动全球共同减排。"],["易错","应对气候变化要减缓与适应双管齐下——减缓治本、适应应急。"]]}],"保障国家安全的资源、环境战略与行动":[{"t":"走向生态文明","secs":[["理念","尊重自然、顺应自然、保护自然,人与自然和谐共生;绿水青山就是金山银山。"],["文明转变","由工业文明征服自然的发展观转向生态文明协调发展的发展观。"],["实现路径","走绿色发展、循环发展、低碳发展之路,推动形成绿色生产和生活方式。"],["制度保障","建立健全生态文明制度体系(生态红线、环境保护督察、生态补偿)。"],["易错","生态文明不是不发展,而是追求绿色、可持续的高质量发展。"]]},{"t":"国家战略与政策","secs":[["双碳目标","力争2030年前实现碳达峰、2060年前实现碳中和。"],["主要措施","优化能源结构、大力发展清洁能源、节能增效、增加森林等碳汇、建设碳排放权交易市场。"],["产业行动","推动产业绿色低碳转型,发展循环经济和新能源产业。"],["战略意义","应对全球气候变化、推动经济社会绿色转型、彰显大国责任担当。"],["易错","碳中和≠零排放,而是排放与吸收(碳汇、碳捕集)相抵达到净零。"]]},{"t":"国际合作","secs":[["必要性","资源、环境、气候等问题具有全球性,任何国家都无法独自应对,必须开展国际合作。"],["合作机制","通过联合国框架及《巴黎协定》《蒙特利尔议定书》《生物多样性公约》等国际公约协作。"],["合作内容","减排、技术转让、资金援助、信息共享与联合治理。"],["中国角色","积极参与全球环境治理、履行国际义务、推动构建人类命运共同体。"],["易错","全球环境治理坚持共同但有区别的责任原则,发达国家应承担更多责任。"]]}]}};
+
+// 6个贯穿专题的详细展开(线索如何贯穿各模块)
+// 结构:每个专题 = {chain:[{stage,from,text}], exam:考查提示}
+// 6个贯穿专题 — 知识链深度展开
+// 每环节:{stage:阶段, from:模块, brief:一句话(路径概览用), body:知识本体, link:与上环衔接, exam:怎么考}
+const TOPIC_DETAIL = {
+'t_water':{
+  chain:[
+    {stage:'循环原理',from:'地理1',brief:'水循环',
+     body:'水循环三类型(海陆间/陆地内/海上内)与六环节(蒸发、水汽输送、降水、地表径流、下渗、地下径流)。海陆间循环使陆地水不断更新,是最重要的类型。',
+     link:'这是全部"水"知识的总起点——后面每一环都是对某个环节的放大。',
+     exam:'选择题考环节判断(如"修水库影响哪个环节"——地表径流);综合题考人类活动对水循环的改变。'},
+    {stage:'海洋水体',from:'地理1',brief:'海水与洋流',
+     body:'海水温度(随纬度/深度递减)、盐度(副热带最高)、密度三性质;洋流分布规律(中低纬副热带为中心、北顺南逆),暖流增温增湿、寒流降温减湿,交汇处成渔场。',
+     link:'水循环中最大的水体是海洋——海水性质与运动是"水"在海洋端的展开。',
+     exam:'洋流分布判读是选择题常客;洋流对气候/渔场/航运的影响是简答高频。'},
+    {stage:'陆地水资源',from:'选必二',brief:'跨流域调水',
+     body:'水资源时空分布不均(我国南多北少、夏多冬少)→工程调配:南水北调东中西三线。调入区缓解缺水促发展,调出区或有生态影响,需节水优先、生态补偿。',
+     link:'循环原理解释了水为何分布不均;这一环讲人类如何用工程手段再分配。',
+     exam:'综合题经典情境:分析某调水工程的原因、线路选择与利弊,答题需兼顾供需双方与生态。'},
+    {stage:'流域开发',from:'选必二',brief:'流域协作',
+     body:'流域具整体性,上中下游分工:上游护生态开发水能、中游防洪灌溉、下游航运供水。综合开发兼顾防洪、发电、航运、灌溉(田纳西河、长江为典型)。',
+     link:'从"调水"到"治河"——视角从水量分配扩展到整条河流的系统开发。',
+     exam:'综合题高频:给某流域材料,分析开发条件、方向与综合治理措施,需分河段作答。'},
+    {stage:'水与安全',from:'选必三',brief:'水安全',
+     body:'水资源短缺与水污染上升为国家安全议题:人均水资源不足、地下水超采、跨境河流争端。保障路径:节水型社会、再生水利用、水源地保护。',
+     link:'前四环是"认识与利用水",这一环升维到"水关乎国家安全"的战略视角。',
+     exam:'结合时事考资源安全:水安全的威胁因素与保障措施,常与粮食/能源安全并列出现。'}
+  ],
+  exam:'「水」是五册书覆盖面最广的线索:选择题考原理(循环环节/洋流判读),综合题考应用(调水/流域),论述题考安全观。复习时按这条链自查:每一环的"原理→影响→对策"能否独立成段。'
+},
+'t_atmos':{
+  chain:[
+    {stage:'受热过程',from:'地理1',brief:'大气受热',
+     body:'三步:太阳短波晒热地面→地面长波烤热大气(地面是近地面大气直接热源)→大气逆辐射保温。削弱作用管白天,保温作用管夜晚。',
+     link:'一切大气现象的能量起点——温差由此而来,温差驱动一切环流。',
+     exam:'必考原理:解释昼夜温差、霜冻夜、温室效应、高原光强温低;选择题年年变着情境考。'},
+    {stage:'热力环流',from:'地理1',brief:'热力环流',
+     body:'冷热不均→垂直运动→水平气压差→大气水平运动。海陆风、山谷风、城市热岛是三大经典实例,等压面凸高凹低。',
+     link:'受热不均的直接后果——最小尺度的大气运动模型,放大即成全球环流。',
+     exam:'画图题与选择题常客:给情境判断环流方向、近地面与高空气压。'},
+    {stage:'全球环流',from:'地理1',brief:'气压带风带',
+     body:'三圈环流形成七压六风,随直射点季节移动5~10纬度;海陆热力差异切断气压带成块状高低压,催生季风。',
+     link:'热力环流的全球版+地转偏向力修正,是气候分布的总控开关。',
+     exam:'气压带风带位置判读、季节移动对气候的影响(地中海/热带草原成因)是高频考点。'},
+    {stage:'天气系统',from:'地理1',brief:'锋面气旋',
+     body:'冷锋(雨在锋后,寒潮沙尘)、暖锋(雨在锋前,连续性降水)、准静止锋(梅雨);气旋阴雨、反气旋晴朗(伏旱/秋高气爽)。',
+     link:'环流是平均态,天气系统是逐日变化——时间尺度从"气候"切到"天气"。',
+     exam:'上海卷爱考真实天气过程:给天气图或寒潮/台风过程,分析系统类型与天气变化。'},
+    {stage:'气候与变化',from:'地理1+选必三',brief:'气候与双碳',
+     body:'气候=纬度+环流+海陆+地形+洋流的综合;判读"以温定带、以水定型"。全球变暖引出气候安全与双碳目标(2030达峰/2060中和)。',
+     link:'前四环合成"气候"这个总结果;变暖议题把大气知识接入国家战略。',
+     exam:'气候判读是基本功;双碳与能源转型是2025综合题的时代热点,大气链条的终端应用。'}
+  ],
+  exam:'「大气」链条的复习要诀:每一环都能用上一环解释——受热不均→热力环流→全球环流→天气系统→气候。综合题给任何大气现象,沿这条链向上找原理、向下找影响。'
+},
+'t_region':{
+  chain:[
+    {stage:'区域认知',from:'选必二',brief:'什么是区域',
+     body:'区域=有区位特征与边界的空间单元,具整体性、差异性、开放性。类型分均质区/功能区,尺度有大中小。',
+     link:'区域分析的概念地基——先知道"区域"是什么,才能分析它。',
+     exam:'选择题考区域类型与特征辨析,是综合题的隐含前提。'},
+    {stage:'特征描述',from:'选必二',brief:'描述特征',
+     body:'描述区域=位置(经纬/海陆/相对)+自然(地形气候水文土壤植被)+人文(人口城市产业交通)。用地理术语、按逻辑顺序。',
+     link:'认知之后第一步操作:把一个区域"说清楚"。',
+     exam:'综合题第一问常是"描述该区域××特征"——答题模板化程度最高、最易得分的一问。'},
+    {stage:'条件评价',from:'地理2+选必二',brief:'评价条件',
+     body:'评价发展条件=有利+不利两面:自然条件(地气水土)与社会经济条件(市场交通劳力政策技术)逐项过。区位分析是核心工具。',
+     link:'从"是什么"到"好不好"——描述之后做价值判断。',
+     exam:'高频题型:"分析××地发展××产业的条件",必须两面作答,只答有利会丢分。'},
+    {stage:'问题对策',from:'选必二',brief:'问题与对策',
+     body:'区域问题三大类:生态脆弱(荒漠化/水土流失)、资源枯竭(矿城衰退)、产业落后(老工业基地)。对策按"生物+工程+管理"或"产业升级+环境治理"组织。',
+     link:'评价发现短板,这一环回答"怎么办"。',
+     exam:'2024考生态脆弱、2025考荒漠化治理——措施类答题要具体可操作,忌空话。'},
+    {stage:'区域协调',from:'选必二',brief:'协调发展',
+     body:'区域间靠产业转移(转出升级/转入发展)、资源调配(西气东输/南水北调)、城市辐射(上海带动长三角)实现协调,国家战略如长三角一体化。',
+     link:'单区域分析的终点是多区域联动——视野从一地扩展到全国。',
+     exam:'区域差异与联系是上海综合题"每年必考"的核心,常以长三角、京津冀等真实区域为情境。'}
+  ],
+  exam:'「区域分析」是上海卷综合题的方法论主轴:描述→评价→问题→对策→协调,这五步就是答题框架本身。拿到任何区域材料题,先判断它在链条的哪一步,套对应的答题结构。'
+},
+'t_industry':{
+  chain:[
+    {stage:'农业区位',from:'地理2',brief:'农业区位',
+     body:'自然因素(气候地形土壤水源)定"能种什么",社会经济(市场交通政策科技)定"种什么划算";科技弱化自然限制(温室/保鲜)。',
+     link:'区位逻辑从第一产业起步——农业受自然约束最强,区位框架最完整。',
+     exam:'高频:分析某地农业区位优势/变化,2021-2024反复考区位差异原因。'},
+    {stage:'工业区位',from:'地理2',brief:'工业区位',
+     body:'五大指向型(原料/市场/动力/劳力/技术),按主导因素布局;原料指向减弱、市场与技术指向增强;污染企业看风向水向。',
+     link:'同一套区位逻辑换到工业——主导因素思维是迁移关键。',
+     exam:'指向型判断+区位变化分析;环境因素(下风向/下游)是易错点。'},
+    {stage:'服务业区位',from:'地理2',brief:'服务业区位',
+     body:'贴近市场与人流,中心地段付租能力最高;电商物流使部分服务业摆脱地段束缚。',
+     link:'三大产业区位补完——付租能力曲线连接城市功能分区。',
+     exam:'常与城市空间结构合并考查(商业区为何在市中心)。'},
+    {stage:'产业转移',from:'选必二',brief:'产业转移',
+     body:'劳动密集型产业向低成本地区转移(国际+国内梯度);转入地得就业与发展但防污染,转出地腾笼换鸟促升级。',
+     link:'区位因素会变——当成本变化,产业用"搬家"重新选择区位。',
+     exam:'综合题常考:分析转移原因+对双方影响,需双向、辩证作答。'},
+    {stage:'转型升级',from:'选必二',brief:'转型升级',
+     body:'资源枯竭型城市与老工业基地的出路:发展接续产业、延长产业链、培育新兴产业与服务业(鲁尔区、东北、上海产业升级为例)。',
+     link:'转移是空间腾挪,转型是就地升级——产业链条的最终落点。',
+     exam:'2024考产业结构调整,常结合具体城市材料,答题按"产业+环境+设施+政策"展开。'}
+  ],
+  exam:'「产业与区位」的考试本质是一套可迁移的分析框架:主导因素→区位评价→动态变化。无论考农业果园还是新能源工厂,都是这套逻辑换皮,练熟框架比刷题更有效。'
+},
+'t_sustain':{
+  chain:[
+    {stage:'环境问题',from:'地理2',brief:'环境问题',
+     body:'三大类:环境污染(大气水土噪声)、生态破坏(水土流失/荒漠化/生物多样性减少)、资源短缺;根源是人口压力+不合理利用+片面增长。',
+     link:'人地矛盾的"病症清单"——先认清问题,才谈协调。',
+     exam:'选择题考问题类型判别;综合题考某问题的成因分析。'},
+    {stage:'发展理念',from:'地理2',brief:'可持续发展',
+     body:'内涵三维:生态(基础)、经济(条件)、社会(目的);原则三条:公平性、持续性、共同性;路径:循环经济、清洁生产、生态农业。',
+     link:'对症的"药方理念"——从问题转向解决之道的价值框架。',
+     exam:'理念本身少直接考,但它是所有措施类答题的隐含评分逻辑。'},
+    {stage:'治理实践',from:'选必二',brief:'生态治理',
+     body:'荒漠化(生物+工程+管理:种草、草方格、禁牧轮牧)、水土流失(小流域综合治理)、矿区修复——理念落地为具体工程。',
+     link:'理念之后是行动——中国治理实践是命题最爱的真实素材。',
+     exam:'2024生态脆弱、2025荒漠化连续出现;措施题按"生物/工程/管理"分类作答最稳。'},
+    {stage:'国家安全',from:'选必三',brief:'三大安全',
+     body:'资源安全(能源/粮食/水)、环境安全(跨境污染/污染转移)、生态安全(多样性/修复),整体性强、跨国界、可演变为社会安全问题。',
+     link:'人地问题升维到国家战略——"安全"是观察人地关系的新高度。',
+     exam:'选必三是近年命题增量区,常以能源/粮食安全为情境,考保障措施。'},
+    {stage:'生态文明',from:'选必三',brief:'生态文明',
+     body:'人与自然和谐共生;双碳目标(2030/2060)与绿色低碳转型;全球治理(巴黎协定)中的中国担当。',
+     link:'链条终点也是价值制高点——所有环境议题最终归于文明形态之变。',
+     exam:'2025综合题以能源转型/双碳为典型情境;论述题的价值升华段落用得上这一环。'}
+  ],
+  exam:'「人地协调」是上海卷的命题灵魂:从问题到理念到实践到安全到文明,层层递进。论述题想拿高分,结尾落到人地协调观与生态文明,是最稳的升华路径。'
+},
+'t_earth':{
+  chain:[
+    {stage:'自转效应',from:'选必一',brief:'自转意义',
+     body:'昼夜交替(周期1太阳日)、地方时(经度15°差1小时)与时区换算、地转偏向(北右南左赤道不偏,影响风向洋流河岸)。',
+     link:'地球运动两大分支之一——所有"时间"问题的源头。',
+     exam:'时区与地方时计算是基本功,地转偏向常埋在风向/河流题里。'},
+    {stage:'公转效应',from:'选必一',brief:'公转意义',
+     body:'黄赤交角23°26′→直射点回归运动→正午太阳高度(H=90°-纬度差)与昼夜长短的季节变化→四季五带。',
+     link:'自转给"日",公转给"年"——两种周期叠加构成全部天文地理现象。',
+     exam:'正午太阳高度计算与应用(楼间距/太阳能板倾角)、昼夜长短判断季节是高频。'},
+    {stage:'综合判读',from:'选必一',brief:'日照图',
+     body:'判读套路:自转方向定南北半球→晨昏线与极圈关系定节气→直射点经线定正午→晨昏线交点推时刻;再算昼长(昼弧/15°)与太阳高度。',
+     link:'把自转公转两套知识压进一张图——综合度最高的题型。',
+     exam:'公认拉分点与区分度王者,2021考过;判读步骤必须练成肌肉记忆。'},
+    {stage:'现实应用',from:'选必一',brief:'生活应用',
+     body:'楼间距与采光(冬至日正午太阳高度最小为准)、太阳能板倾角调节、日出日落方位判断、极地航线与时差。',
+     link:'从图上计算回到真实世界——上海卷偏爱生活化情境。',
+     exam:'应用题让抽象计算落地,常以上海本地楼宇/出行为情境,审题抓"哪一天、哪个量"。'}
+  ],
+  exam:'「地球运动」难在综合:单个知识都不难,难在日照图把它们捏在一起。突破方法是固定判读顺序(方向→节气→时间→计算),每张图都按同一套流程走,熟练后这是最稳定的得分点。'
+}
+};
+
+
+
+// 考点-知识点映射:基于已核实的考情资料(2017/2019/2021/2022/2024/2025官方评析与考点回顾)
+// 结构:{模块id:{章名:{知识点标题:{level:频度, note:考查记录}}}}
+// 仅标注有据可查的知识点,不编造
+const KD_MAP = {
+dl1:{
+ '大气圈与天气、气候':{
+  '大气的受热过程':{level:'高频',note:'选择题反复考查:解释昼夜温差、霜冻、温室效应等生活情境(2021等多年涉及)。'},
+  '热力环流':{level:'高频',note:'海陆风/城市热岛判断,常以画图或选择题形式出现。'},
+  '气压带与风带':{level:'高频',note:'气候成因分析的核心工具,地中海/热带草原气候成因常考。'},
+  '常见天气系统':{level:'高频',note:'2025综合题考天气系统发展过程;寒潮/梅雨/台风为常用情境。'},
+  '气候的形成因子与类型分布':{level:'高频',note:'2021、2025均考气候判读;以温定带以水定型是基本功。'}
+ },
+ '水圈与水循环':{
+  '水循环的过程与环节':{level:'高频',note:'2025综合题考河流水文特征变化;人类活动影响环节是常考点。'},
+  '世界洋流的分布规律与影响':{level:'高频',note:'2021考洋流;分布判读+对气候渔场影响是选择题常客。'}
+ },
+ '岩石圈与地表形态':{
+  '岩石圈的物质循环':{level:'高频',note:'2021考三大类岩石;循环示意图判读常见。'},
+  '内力作用与地貌':{level:'高频',note:'2021考板块与地质构造;2025考地质地貌过程分析。'},
+  '主要地貌类型':{level:'常考',note:'2021考等高线地形图与地貌判读。'}
+ },
+ '自然灾害':{
+  '气象灾害':{level:'常考',note:'2025考自然灾害;台风寒潮为高频情境。'},
+  '地质灾害':{level:'常考',note:'2024综合题以四川清平镇泥石流滑坡为情境考灾害关联性。'}
+ }
+},
+dl2:{
+ '人口':{
+  '人口迁移':{level:'常考',note:'2021考人口增长与迁移;影响因素双向分析是重点。'}
+ },
+ '乡村和城镇':{
+  '乡村与城镇的空间结构':{level:'高频',note:'功能分区与付租能力曲线,常立足上海情境。'},
+  '城镇化':{level:'高频',note:'2021考城市问题;城镇化进程与逆城市化辨析常见。'}
+ },
+ '产业区位因素':{
+  '农业区位因素及其变化':{level:'高频',note:'2021/2022/2024反复考区位差异原因,是人文地理核心。'},
+  '工业区位因素及其变化':{level:'高频',note:'指向型判断+区位变化,2022区位差异深化考查。'},
+  '服务业区位因素及其变化':{level:'常考',note:'常与城市商业区结合考查。'}
+ },
+ '环境与发展':{
+  '走向人地协调——可持续发展':{level:'高频',note:'可持续发展理念是论述题价值升华的标准落点。'}
+ },
+ '地理信息技术':{
+  '地理信息技术(3S)的应用':{level:'常考',note:'3S功能辨析(RS取像/GPS定位/GIS分析)与应用场景判断,选择题常考,与地域文化常并列出现。'}
+ }
+},
+xb1:{
+ '地球的运动':{
+  '地球自转的地理意义':{level:'高频',note:'时区与地方时计算是基本功;2021考地球运动。'},
+  '地球公转的地理意义':{level:'高频',note:'正午太阳高度计算与应用(楼间距)、昼夜长短判断为高频。'},
+  '日照图的判读与计算':{level:'难点',note:'公认拉分点,综合判读区分度最高,需固定判读流程。'}
+ },
+ '自然环境的地域差异性':{
+  '地域分异的基本规律':{level:'高频',note:'2017、2019综合题连续考地域分异规律,是综合题经典主题。'},
+  '地方性分异规律(非地带性)':{level:'常考',note:'非地带性实例辨析(绿洲/南半球缺失带)是易错点。'}
+ },
+ '水与海—气相互作用':{
+  '厄尔尼诺与拉尼娜现象':{level:'难点',note:'海气相互作用与厄尔尼诺/拉尼娜的成因及影响,常以陌生海域情境化考查,理解难度大、区分度高。'}
+ }
+},
+xb2:{
+ '区域与区域发展':{
+  '区域整体性、差异性与关联性':{level:'每年必考',note:'区域差异分析是上海综合题核心命题点,2022深化考查。'}
+ },
+ '资源、环境与区域发展':{
+  '生态脆弱区的综合治理':{level:'高频',note:'2024考生态脆弱性演化、2025考荒漠化治理,连续出现。'},
+  '资源枯竭型城市的转型':{level:'高频',note:'2017/2019综合题考区域开发;转型措施是答题重点。'},
+  '产业结构转型地区的发展':{level:'高频',note:'2024考产业结构调整,常结合具体城市材料。'}
+ },
+ '城市、产业与区域发展':{
+  '城市的辐射功能':{level:'常考',note:'2024考区域辐射带动作用,以上海/纽约为典型。'},
+  '产业转移':{level:'高频',note:'转移原因+对双方影响的双向分析是综合题常见设问。'}
+ },
+ '区域联系与区域协调发展':{
+  '流域内部的协作开发':{level:'高频',note:'流域开发是综合题经典情境,需分河段作答。'},
+  '资源跨区域调配':{level:'高频',note:'南水北调/西气东输,分析原因线路与双向影响。'}
+ }
+},
+xb3:{
+ '资源安全与国家安全':{
+  '中国的能源安全':{level:'热点高频',note:'2025综合题以能源转型为典型情境,双碳背景下持续走热。'},
+  '中国的耕地资源与粮食安全':{level:'高频',note:'粮食安全保障措施,常与18亿亩红线结合。'}
+ },
+ '环境安全与国家安全':{
+  '全球气候变化与国家安全':{level:'高频',note:'气候变化影响与应对(减缓+适应),贯穿可持续主线。'}
+ },
+ '保障国家安全的资源、环境战略与行动':{
+  '国家战略与政策':{level:'热点高频',note:'双碳目标(2030/2060)是2025命题热点,绿色发展为价值导向。'}
+ }
+}
+};
+
+
+
+// 2025上海地理等级考真题库(网络收集版,含答案)
+// 按知识点标题索引,挂到对应卡片。结构:{模块id:{知识点标题:[{y,topic,q,a,type}]}}
+const ZHENTI = {
+dl1:{
+ '大气的组成与垂直分层':[{y:'2025',topic:'热带气旋登陆昆士兰',q:'从上海乘飞机到昆士兰,飞机在平流层底部飞行,飞行高度如何变化',a:'C 先上升后下降(对流层顶高度随纬度降低而升高,从中纬飞向低纬平流层底界先升后降)',type:'单选'}],
+ '主要地貌类型':[{y:'2025',topic:'热带气旋登陆昆士兰',q:'黄金海岸从平缓坡面变成"陡峭断崖",推测分析其形成过程',a:'风暴潮加剧海水对海岸的侵蚀;雨水下渗与重力作用下岩体塌陷形成陡峭断崖',type:'综合'}],
+ '岩石圈的物质循环':[{y:'2025',topic:'河流含沙量',q:'流水作用下最易侵蚀的岩石',a:'A 页岩(沉积岩、硬度低,较岩浆岩/变质岩更易被流水侵蚀)',type:'填空'}],
+ '地球的演化历史':[{y:'2025',topic:'苏格兰新能源',q:'某地侏罗系地层中发现丰富油气资源,其生成原因',a:'B 发生地层下陷(侏罗纪属中生代,海洋生物遗体沉积埋藏成烃)',type:'单选'}],
+ '气候的形成因子与类型分布':[{y:'2025',topic:'热带气旋登陆昆士兰',q:'昆士兰州气候类型丰富多样,有哪些',a:'ACD 热带雨林/热带稀树草原/亚热带湿润气候(不定项)',type:'不定项'}]
+},
+dl2:{
+ '乡村与城镇的空间结构':[{y:'2025',topic:'小岗村的蜕变',q:'村落集聚的好处;旅游业繁荣后选一条路作商旅步行街',a:'集聚好处选A(①土地利用效率③社区集聚力);步行街选B友谊大道',type:'单选'}],
+ '人口迁移':[{y:'2025',topic:'小岗村的蜕变',q:'根据推拉效应,○□△分别代表什么(人员流动示意)',a:'C 拉力因素、推力因素、中间阻力',type:'单选'}],
+ '农业区位因素及其变化':[{y:'2025',topic:'小岗村的蜕变',q:'小岗村人口、产业的转型变化特征',a:'人口由单一村民向村民/工人/技术人员/博士生转变,素质提高;产业由传统种植向现代农业、旅游业转变,附加值提升、形成产业园区',type:'综合'}],
+ '地理信息技术(3S)的应用':[{y:'2025',topic:'河流含沙量',q:'遥感测得河流悬浮泥沙浓度与实际有较大差异的原因',a:'传感器分辨率有限、不同卫星精度不同致几何畸变;大气散射吸收、水面折射反射、地形起伏致成像偏差',type:'综合'}]
+},
+xb1:{
+ '地球公转的地理意义':[{y:'2025',topic:'热带气旋登陆昆士兰',q:'昆士兰州一年中最大正午太阳高度角、最小正午太阳高度角、何日最小',a:'最大90°、最小46°34′、6月22前后(冬至)最小',type:'填空'}],
+ '地方性分异规律(非地带性)':[{y:'2025',topic:'热带气旋登陆昆士兰',q:'昆士兰东北部气候呈非地带性分异,最可能的成因',a:'ABC 地形、洋流、信风(不定项)',type:'不定项'}],
+ '地球自转的地理意义':[{y:'2025',topic:'热带气旋登陆昆士兰',q:'判断甲处风向与气旋前进方向关系、所处半圆、风向变化',a:'相同(A)、航行危险半圆(A)、顺时针(A)——南半球气旋顺时针旋转,甲处旋转风与气旋移动方向叠加、风力增强',type:'填空'}],
+ '陆地水体的相互补给关系':[{y:'2025',topic:'河流含沙量',q:'某河流5月径流量大原因(积雪融水)、8月更大原因(降水)、判断河流位置',a:'5月积雪融水(C)、8月降水(A)补给;积雪融水补给与气温正相关、雨水补给与降水同步',type:'综合'}]
+},
+xb2:{
+ '城市的辐射功能':[{y:'2025',topic:'小岗村的蜕变',q:'小岗村经济发展主要受哪个城市群辐射',a:'C 长三角城市群(安徽凤阳临近长三角)',type:'单选'}],
+ '生态脆弱区的综合治理':[{y:'2025',topic:'荒漠化的综合治理',q:'荒漠化潜在风险遍布全省的省份;甲乙丙荒漠化风险排序;不同植被碳储量增长差异及原因',a:'遍布全省选C宁夏;风险排序D;草地碳储量增长最多(草原面积大)、林地最小(干旱林少)',type:'综合'}]
+},
+xb3:{
+ '自然资源及其利用':[{y:'2025',topic:'苏格兰新能源',q:'苏格兰使用最多资源的再生分类;能源消费中碳减排压力最大的部门',a:'石油占50.4%最多、属不可再生资源;供热占51.7%、碳减排压力最大',type:'填空'}],
+ '资源安全的认识':[{y:'2025',topic:'苏格兰新能源',q:'若氢能成为主导产业,苏格兰的优势区位条件与面临的挑战',a:'优势:风能水能丰富、靠近北海便于储运、政策扶持、人才与市场;挑战:开发难度大、资金技术投入高、配套设施不完善',type:'综合'}],
+ '国家战略与政策':[{y:'2025',topic:'苏格兰新能源',q:'限制潮汐能开发的原因;能源转型当下可立即发展的产业',a:'限制原因B破坏沿岸生态;可立即发展BCD(工业遗迹旅游/水产加工/能源数据共享)',type:'综合'}]
+}
+};
+
+
+
+// 2025上海地理等级考完整真题(网络收集版,含答案)
+// 每大题:{id,title,bg,subs:[{n,q,a,kp:关联知识点[模块id,知识点标题]}]}
+// 2025上海地理等级考完整真题(网络收集版,含答案)
+// 补全:材料、图表文字说明、完整选项。img字段=图表说明
+const PAPER_2025 = {
+  year:'2025',
+  name:'2025年上海市地理等级考真题',
+  note:'网络收集版,含参考答案。官方未公开完整真题,以下据网络流传版本整理。部分题目含图表,已用文字说明图表关键信息(图表本身无法在此精确重现),做题时建议结合原卷图表。',
+  papers:[
+    {id:'p1',title:'小岗村的蜕变',pages:['dl01','dl02'],
+     bg:'位于江淮平原的安徽凤阳县小岗村,曾经土地盐碱化严重、交通阻塞,在改革开放后交通基础设施的完善,使得小岗村成为现代化农村,是全国乡村改革的模范代表。',
+     img:'【小岗村布局简图】标注有下客区、村委会、农贸市场、邮局、居民区,以及改革大道、友谊大道、创新大道、大包干大道等道路;农贸市场居于村中心、临友谊大道。',
+     subs:[
+      {n:'1',q:'小岗村过去村落零散,如今村落集聚。村落集聚的好处是(单选)　①土地利用效率提升　②防止村庄空废化　③社区集聚力提升　④防止农村老弱化　A.①③　B.②④　C.①④　D.②③',a:'A(①③)',type:'单选',kp:['dl2','乡村与城镇的空间结构']},
+      {n:'2',q:'随着小岗村旅游业不断繁荣发展,当地市政府欲选择一条路作为商旅步行街,最适合的是(单选)　A.改革大道　B.友谊大道　C.创新大道　D.大包干大道',a:'B 友谊大道(位于村中心、邻近农贸市场与主要功能区,人流集中)',type:'单选',kp:['dl2','乡村与城镇的空间结构']},
+      {n:'3',q:'科研人员利用生物治理当地盐碱化,种植了A、B、C、D四种树,用哪种树效果最好(单选)　【附土壤含盐量随土壤深度变化柱状图,A/B/C/D四种树对应不同深度的土壤含盐量】',a:'B(该树根系所及土层含盐量最低、耐盐与吸盐效果最好)',type:'单选',kp:['dl1','土壤的形成与影响因素']},
+      {n:'4',q:'在小岗村的经济发展过程中,主要受到哪个城市群的辐射(单选)　A.京津冀城市群　B.辽中南城市群　C.长三角城市群　D.珠三角城市群',a:'C 长三角城市群(安徽凤阳邻近长三角,受其辐射带动)',type:'单选',kp:['xb2','城市的辐射功能']},
+      {n:'5',q:'在小岗村发展改革的过程中,根据推拉效应,以下示意图可以代表当时的人员流动情况,○、□、△分别代表什么(单选)　【附"过去"与"现在"两组人员流动示意图,箭头表示小岗村与目的地之间的流动】　A.推力因素、拉力因素、中间阻力　B.推力因素、中间阻力、拉力因素　C.拉力因素、推力因素、中间阻力　D.拉力因素、中间阻力、推力因素',a:'C 拉力因素、推力因素、中间阻力',type:'单选',kp:['dl2','人口迁移']},
+      {n:'6',q:'根据材料和本卡片,说明小岗村人口、产业的转型变化特征。　【附卡片:称号=现代化农村/世界最适合旅游的乡村;人口=村民、工人、技术人员、博士生;土地=聚落更集中;产业特征=产业园区;产业=5G智慧农业】',a:'人口:由过去单一村民向村民、工人、技术人员、博士生转变,人口结构更多样化、人口素质不断提高(人口文化构成变化);产业:从传统种植业向现代农业、旅游业转变,产业由低附加值向高附加值转变,且产业出现集聚、形成产业园区',type:'综合',kp:['dl2','农业区位因素及其变化']}
+     ]},
+    {id:'p2',title:'荒漠化的综合治理',pages:['dl02','dl03'],
+     bg:'土地荒漠化是影响人类生存和发展的全球性重大生态问题,我国也是世界上荒漠化最严重的国家之一。内蒙古荒漠化潜在发生区域分布广泛,近年来大力开展生态恢复荒漠化治理,大有成效,植被碳储量大幅上升。(注:碳储量指一个碳库中碳的数量)',
+     img:'【我国荒漠化潜在发生区域分布图】用不同色块标出干旱区、半干旱区、亚湿润半干旱区,图中标注甲、丙等位置;另附【内蒙古不同植被类型碳储量变化表】列出林地、草地、耕地、其他在"增加/减少/净增"上的数量(草地>10000、耕地>1000、林地<1、其他<10量级)。',
+     subs:[
+      {n:'1',q:'以下哪个省份荒漠化潜在发生风险遍布全省(单选)　A.新疆　B.青海　C.宁夏　D.甘肃',a:'C 宁夏(全境处于荒漠化潜在发生区)',type:'单选',kp:['xb2','生态脆弱区的综合治理']},
+      {n:'2',q:'除了温带荒漠、高寒山地等植被类型,我国荒漠化潜在发生区域还有哪些植被类型(不定项)　A.温带落叶阔叶林　B.亚热带常绿硬叶林　C.温带草原　D.亚热带常绿阔叶林',a:'AC 温带落叶阔叶林、温带草原',type:'不定项',kp:['dl1','主要植被类型与分布']},
+      {n:'3',q:'某地的降水量与蒸发量之比反映此地荒漠化潜在风险程度,下列对甲、乙、丙三地荒漠化潜在风险由强到弱的排序正确的是(单选)　A.丙、乙、甲　B.乙、丙、甲　C.乙、甲、丙　D.丙、甲、乙',a:'D 丙、甲、乙(降水量蒸发量之比越小、越干旱、风险越强)',type:'单选',kp:['xb2','生态脆弱区的综合治理']},
+      {n:'4',q:'研究人员欲对不同区域的土地荒漠化潜在风险进行评估,填表:从气候(降水量、气温年较差)、土壤质地、土壤成分等角度,说明各因素如何变化导致荒漠化潜在风险上升。',a:'①气温年较差增大;②土壤质地疏松、蓄水能力弱(透水能力强);③土壤水分含量低。各因素朝此方向变化均使荒漠化潜在风险上升',type:'综合',kp:['xb2','生态脆弱区的综合治理']},
+      {n:'5',q:'请分析内蒙古不同植被类型碳储量增长差异,并分析原因。',a:'差异:草地碳储量增长最多,林地碳储量增长最小。原因:内蒙古深居内陆、气候干旱、林地面积少,故林地碳储量增长最小;内蒙古为温带大陆性气候、降水少、植被多为温带草原、草地面积大,故草地碳储量增长最大',type:'综合',kp:['xb3','全球气候变化与国家安全']}
+     ]},
+    {id:'p3',title:'苏格兰新能源',pages:['dl04'],
+     bg:'材料一:阿伯丁被称为"欧洲石油之城",东边海洋油气资源丰富、石油化工起家,现面临石油枯竭、开采难度加大,每桶石油开采成本比原先增加了50%。材料二:苏格兰现面临能源转型,政府发布转型规划发展制氢业——上游用其他能源制氢、中游涉及氢能的液化纯化运输和储存、下游涉及氢能发电。',
+     img:'【苏格兰地理位置及新能源产业分布图】标注陆风发电站、海风发电站、制氢站、储氢站等位置(海风站多在东部海域);【苏格兰能源资源生产结构图】石油50.4%、天然气31.2%等;【苏格兰能源消费结构图】供热51.7%、交通25%、供电20%。',
+     subs:[
+      {n:'1',q:'根据资源的再生能力分类,苏格兰目前使用最多的资源属于____资源;苏格兰地区的能源消费结构中,____部门的碳减排压力最大。',a:'不可再生(石油占50.4%最多,属不可再生资源);供热部门(占51.7%,碳减排压力最大)',type:'填空',kp:['xb3','自然资源及其利用']},
+      {n:'2',q:'苏格兰风电产业以陆上风电为主,海上风电发展不足,其原因为(单选)　A.海上储能困难　B.西风资源匮乏　C.距离市场较近　D.海上交通不便',a:'D 海上交通不便(建设维护成本高、施工困难)',type:'单选',kp:['dl2','工业区位因素及其变化']},
+      {n:'3',q:'苏格兰某个滩涂湾区潮汐能丰富,但对建设潮汐能发电设施与对潮汐能的开发进行了限制,其原因主要是(单选)　A.影响海运交通　B.破坏沿岸生态　C.加剧海水侵蚀　D.加剧土壤盐碱化',a:'B 破坏沿岸生态(滩涂湾区是重要生态系统)',type:'单选',kp:['xb3','国家战略与政策']},
+      {n:'4',q:'某个地方在侏罗系地层中发现了丰富的油气资源,其生成原因是(单选)　A.被子植物繁盛　B.发生地层下陷　C.海平面下降　D.海水盐度增加',a:'B 发生地层下陷(侏罗纪属中生代,海洋生物遗体在地层下陷处大量沉积、埋藏并转化为油气)',type:'单选',kp:['dl1','地球的演化历史']},
+      {n:'5',q:'苏格兰在能源转型过程中,当下可以立即发展的产业为(不定项)　A.石油勘探　B.工业遗迹旅游　C.水产加工　D.能源数据处理共享',a:'BCD 工业遗迹旅游、水产加工、能源数据处理共享(均可立即开展;石油勘探与转型方向相悖)',type:'不定项',kp:['xb3','国家战略与政策']},
+      {n:'6',q:'结合苏格兰的纬度位置分析以下两条建筑师提议的原因及对能源转型的作用。提议1:修建屋顶与外墙使用保暖材料;提议2:在屋顶铺设太阳能能源板(主要为夏季供能)。',a:'提议1:苏格兰纬度高、冬季漫长寒冷,保暖材料可减少室内热量散失、降低供暖需求、减少对化石燃料依赖,从而节约能源、推动能源转型;提议2:苏格兰纬度高,夏季白昼时间长、日照时数多,太阳能可利用时间充足,夏季供电可缓解用电高峰、优化能源消费结构、推动能源转型(注:苏格兰多云阴雨、太阳辐射并不强,该提议的优势主要来自夏季昼长而非辐射强度)',type:'综合',kp:['xb1','地球公转的地理意义']},
+      {n:'7',q:'如果未来氢能成为主导产业,分析苏格兰的优势区位条件和面临的挑战。',a:'优势:自然——风能水能丰富可为制氢供能、靠近北海便于氢能储存与对外输出;人文——政府发布能源转型规划政策扶持、经济发达高校与科研所多人才众多、市场需求大。挑战:氢能开发难度大、需大量资金技术投入、成本较高;氢能产业对基础设施要求高,目前配套设施不够完善',type:'综合',kp:['xb3','资源安全的认识']}
+     ]},
+    {id:'p4',title:'热带气旋登陆昆士兰',pages:['dl05','dl06'],
+     bg:'半个多世纪来首个将在澳大利亚东南部沿海地区登陆的热带气旋"阿尔弗雷德"正在逼近该国第三大城市布里斯班和旅游胜地黄金海岸。',
+     img:'【澳大利亚东部地图】标注甲地(约20°S,位于气旋中心附近)、布里斯班、黄金海岸,以及气旋等压线(995、985hPa);另附【黄金海岸气旋登陆前后剖面示意图】登陆前为平缓坡面、登陆后变为陡峭断崖。',
+     subs:[
+      {n:'1',q:'某学校研学小组,从上海乘坐飞机到昆士兰州。已知飞机在平流层底部飞行,则飞机高度(单选)　A.一直上升　B.一直下降　C.先上升后下降　D.先下降后上升',a:'C 先上升后下降(对流层厚度随纬度降低而增大,平流层底界随之先升后降)',type:'单选',kp:['dl1','大气的组成与垂直分层']},
+      {n:'2',q:'昆士兰州一年中最大的正午太阳高度角____度;最小的正午太阳高度角____度;____日(日期)前后此处正午太阳高度角最小。(以甲地20°S计)',a:'最大90°;最小46°34′;6月22(北半球夏至/南半球冬至)前后最小',type:'填空',kp:['xb1','地球公转的地理意义']},
+      {n:'3',q:'昆士兰州气候类型丰富多样,有(不定项)　A.热带雨林气候　B.地中海气候　C.热带稀树草原气候　D.亚热带湿润气候',a:'ACD 热带雨林、热带稀树草原、亚热带湿润气候',type:'不定项',kp:['dl1','气候的形成因子与类型分布']},
+      {n:'4',q:'昆士兰州的东北部气候呈非地带性分异的规律,最有可能的成因(不定项)　A.地形　B.洋流　C.信风　D.海陆热力性质',a:'ABC 地形(大分水岭抬升)、洋流(东澳暖流增温增湿)、信风(东南信风带来水汽)',type:'不定项',kp:['xb1','地方性分异规律(非地带性)']},
+      {n:'5',q:'在航行危险半圆内风速较大、海浪较强、航行危险;在可航半圆内风速较小、海浪较弱、航行安全。判断此时甲处风向与气旋前进方向____(A.相同 B.相反),判断此时甲处处于____(A.航行危险半圆 B.可航半圆),判断甲处一段时间内风向的变化____(A.顺时针 B.逆时针 C.先顺时针后逆时针)。',a:'相同(A);航行危险半圆(A);顺时针(A)。南半球气旋呈顺时针旋转;甲处旋转风向与气旋前进方向一致,旋转风速与移动速度叠加、风力增强,故处于航行危险半圆',type:'填空',kp:['xb1','地球自转的地理意义']},
+      {n:'6',q:'下图为昆士兰黄金海岸在气旋登陆前后两张示意图。从平缓坡面变成"陡峭断崖",请推测和分析陡峭断崖的形成过程。',a:'气旋携带强大风力和水汽,抵达海岸时受地形影响快速抬升形成风暴潮,风暴潮加剧了海水对海岸的侵蚀;同时在雨水下渗和重力作用下部分岩体发生塌陷,形成陡峭断崖',type:'综合',kp:['dl1','主要地貌类型']}
+     ]},
+    {id:'p5',title:'河流含沙量',pages:['dl07'],
+     bg:'材料一:悬浮泥沙浓度是指单位体积河水中所含悬浮泥沙的质量,受大气降水、土壤侵蚀、大坝建设以及气候变化等因素共同影响。材料二:科研人员利用1985至2020年卫星图像,研究出全球河流通道和陆地—海洋沉积物通量中悬浮沉积物浓度变化规律,发现全球67.8%的河流悬浮泥沙浓度出现显著变化,其中43.4%呈增加趋势、24.4%呈减少趋势,最大增长出现在南美洲,仅亚马孙河就占全球沉积物通量总增长的25%。材料三:河流悬浮泥沙浓度在时间和空间方面表现出较大差异。',
+     img:'【全球河流悬浮泥沙浓度变化趋势图】世界地图标注悬浮浓度采样点、暗清水、一/二级河流、长期站,并标注甲、丙等位置;【某河流水沙季节变化图】纵轴为径流量(亿m³)与输沙量(万t)、横轴为1-12月,曲线显示5月有一小峰、8月达最大峰。',
+     subs:[
+      {n:'1',q:'在下列岩石中,受流水作用最易发生侵蚀的是____(A.页岩 B.花岗岩 C.片麻岩 D.石英岩);当河道由窄变宽时,河流的输沙量____(A.增大 B.减小)。',a:'A 页岩(属沉积岩、硬度低、易被流水侵蚀;花岗岩为岩浆岩、片麻岩与石英岩为变质岩,均较坚硬);B 减小(河道变宽流速减缓、搬运力下降)',type:'填空',kp:['dl1','岩石圈的物质循环']},
+      {n:'2',q:'如上图,该河流5月径流量大,原因是____补给(A.降水 B.冰川融水 C.积雪融水),8月径流量更大,原因是____补给(A.降水 B.冰川融水 C.积雪融水),该河流可能位于____(A.甲 B.乙 C.丙 D.丁),分析该河流5月悬浮泥沙含量高的原因____。',a:'5月积雪融水(C)、8月降水(A)补给;位置据图判断;5月悬浮泥沙高:5月地表植被覆盖率低、积雪融水导致表土侵蚀加剧、泥沙搬运作用强、流入河流泥沙增多',type:'综合',kp:['xb1','陆地水体的相互补给关系']},
+      {n:'3',q:'对于一条河流,当河流悬浮泥沙量上升,河流会(不定项)　A.河谷后退减缓　B.河漫滩面积增大　C.河口三角洲发育减弱',a:'AB(泥沙增多、沉积增强,河谷侵蚀后退减缓、河漫滩面积增大;河口三角洲应发育增强)',type:'不定项',kp:['dl1','主要地貌类型']},
+      {n:'4',q:'长江上游含沙量上升,下游含沙量下降,揭示出在同一河流的不同河段空间异质性,可能的原因是(单选)　①上游植树造林　②上游建堤坝　③下游退耕还湖　④下游建护岸工程　A.①②③　B.①③④　C.②③④　D.①②④',a:'【存疑·建议以官方卷为准】本题在网络收集版中,选项与题干存在矛盾:②上游建坝拦沙、③下游退耕还湖蓄沙、④下游护岸减少冲刷,均会使下游含沙量下降;而①上游植树造林只会使"上游"含沙量下降,与题干"上游含沙量上升"相悖。网络流传答案为D(①②④),但逻辑无法自洽,疑为题干或选项转录有误,请对照官方真题与答案订正。',type:'单选',kp:['xb2','流域内部的协作开发']},
+      {n:'5',q:'经监测,亚马孙河输沙量近年来逐年递增,请分析原因。',a:'自然原因:全球变暖致亚马孙流域气候异常、极端降水增多,暴雨冲刷地表使土壤侵蚀加剧、入河泥沙增多。人文原因:雨林遭大规模砍伐、地表植被破坏裸露,雨水直接冲刷表土;雨林保护政策执行不足、非法伐木与土地侵占屡禁不止;流域综合治理缺位。(注:输沙量由流域侵蚀与径流搬运决定,河口潮汐只是再分配河口泥沙、并不增加河流向海的输沙量,故不作为原因)',type:'综合',kp:['xb3','全球气候变化与国家安全']},
+      {n:'6',q:'科研人员通过遥感技术探究河流悬浮泥沙浓度,测得数据与实际数据有比较大的差异,请你推测具体原因。',a:'①遥感传感器对地物多为大范围粗略反馈、无法精确感知动态细小物体,不同卫星传感器类型与精度不同致几何畸变与定位差异;②大气干扰(电磁波经大气散射吸收折射)、水面折射与反射致悬浮泥沙成像偏差、地形高低起伏致影像几何变形、遥感平台(航天/航空)不同等',type:'综合',kp:['dl2','地理信息技术(3S)的应用']}
+     ]}
+  ]
+};
+
+var PAPER_YEARS = [
+  {year:'2025',date:'2025年5月6日',full:true,
+   themes:['小岗村的蜕变','荒漠化的综合治理','苏格兰新能源','热带气旋登陆昆士兰','河流含沙量'],
+   note:'已收录完整题目、答案与图表说明,并与知识点双向关联。点击查看完整真题。'},
+  {year:'2024',date:'2024年5月6日',full:false,
+   themes:['探究城市行道树','清平镇的乡村振兴','“聚宝盆”的再开发(柴达木盆地能源建设)','变暖中的格陵兰(格陵兰岛冰盖变化)','长江口的河海交互作用'],
+   note:'据上海市教育考试院官方评析,5个综合主题已确认(如上)。试卷通过柴达木盆地能源建设、格陵兰岛冰盖变化等情境考查区域认知与综合思维。完整题目(选项/答案)待补充。'},
+  {year:'2023',date:'2023年5月7日',full:false,
+   themes:['大都市机场建设','海南岛环岛研学','中巴公路修建','绍兴市产业结构优化','土耳其地震救援'],
+   note:'据上海市教育考试院官方评析,5个综合主题已确认(如上),涉及“城市与区域高质量发展”“人地和谐与自然灾害防治”“地理过程的感知体验”“地理技术应用”。完整题目待补充。'},
+  {year:'2022',date:'2022年6月19日',full:false,
+   themes:['上海“一江一河”治理'],
+   note:'据上海市教育考试院官方评析:综合题聚焦上海“一江一河”治理(城市更新);其余涉及沉积物排水性实验、旅游景点岩石类型推测、世界人口分布、贵州“丰雨但缺水”、北海道稻谷生产等(为知识点线索,完整大题主题与题目待补充)。'},
+  {year:'2021',date:'2021年5月9日',full:false,themes:[],
+   note:'据上海市教育考试院官方评析:试卷覆盖地球概况、地质地貌、气象水文、城市人口、产业发展、文化地理、地理信息技术、区域发展等;含时区换算、气候判断、树影推测等题。综合题主题与完整题目待确认补充。'},
+  {year:'2020',date:'2020年6月7日',full:false,
+   themes:['印度金奈的洪涝','中国长三角的雾霾','蒙古羊绒业产业发展'],
+   note:'据上海市教育考试院命题专家文章:3道综合题主题已确认(如上)。选择题区域背景含吉尔吉斯斯坦伊塞克湖、上海自贸区临港新片区、澳大利亚中西部缺水等。完整题目待补充。'},
+  {year:'2019',date:'2019年',full:false,themes:['地域分异规律(综合题)','区域开发','全球资源、环境与可持续发展'],note:'据上海市教育考试院评析整理:综合题涉及地域分异规律、区域开发,以及全球资源、环境与可持续发展等主题方向(此处为考查主题,非大题原标题)。完整题目(选项/答案/图表)待补充。'},
+  {year:'2018',date:'2018年',full:false,themes:[],note:'主题待确认,完整题目待补充。'},
+  {year:'2017',date:'2017年',full:false,themes:['地域分异规律(综合题)','区域开发'],note:'据上海市教育考试院评析整理:综合题涉及地域分异规律与区域开发等主题方向(此处为考查主题,非大题原标题)。完整题目(选项/答案/图表)待补充。'},
+  {year:'2016',date:'2016年(等级考首年)',full:false,themes:[],note:'2016年为上海地理等级考实施首年。综合题主题待确认,完整题目待补充。'}
+];
+
+
+
+// 真题配图SVG(照原图还原)。键名对应大题id_图序
+var PAGES = {
+'dl01':{src:'img/dl01.jpg',name:'真题原卷第1页'},
+'dl02':{src:'img/dl02.jpg',name:'真题原卷第2页'},
+'dl03':{src:'img/dl03.jpg',name:'真题原卷第3页'},
+'dl04':{src:'img/dl04.jpg',name:'真题原卷第4页'},
+'dl05':{src:'img/dl05.jpg',name:'真题原卷第5页'},
+'dl06':{src:'img/dl06.jpg',name:'真题原卷第6页'},
+'dl07':{src:'img/dl07.jpg',name:'真题原卷第7页'}
+};
+
+
+
+function renderHome(){
+  // 命题概览
+  var ov=EXAM_OVERVIEW;
+  document.getElementById('examOverview').innerHTML=
+    '<div class="row"><b>试卷结构</b><span>'+ov.structure+'</span></div>'+
+    '<div class="row"><b>内容占比</b><span>'+ov.ratio+'</span></div>'+
+    '<div class="row"><b>命题趋势</b><span>'+ov.trend+'</span></div>'+
+    '<div class="row"><b>上海特色</b><span>'+ov.feature+'</span></div>'+
+    '<div class="src">来源:'+ov.src+'</div>';
+  // 模块卡(分必修/选修两组)
+  function cardHtml(m){
+    var ch=m.chapters.length;
+    var pt=m.chapters.reduce(function(s,c){return s+c.points.length},0);
+    var catName=m.cat==='compulsory'?'必修':'选择性必修';
+    var ex=EXAM_DATA[m.id];
+    var freqHtml=ex?'<span class="freq">'+ex.freq+'</span>':'';
+    var title=m.full.replace(/必修|选择性必修/,'').trim()||m.name;
+    return '<div class="modcard" style="--mc:'+m.color+';--mcsoft:'+m.color+'18" onclick="openModule(\''+m.id+'\')" tabindex="0" role="button">'+
+      '<div class="tagrow"><span class="tag">'+catName+'</span>'+freqHtml+'</div>'+
+      '<h3>'+title+'</h3><div class="subt">'+m.sub+'</div>'+
+      '<div class="desc">'+m.intro+'</div>'+
+      '<div class="meta"><span><b>'+ch+'</b> 章</span><span><b>'+pt+'</b> 知识点</span><span>'+m.weight+'</span></div></div>';
+  }
+  document.getElementById('modGridC').innerHTML=MODULES.filter(function(m){return m.cat==='compulsory'}).map(cardHtml).join('');
+  document.getElementById('modGridE').innerHTML=MODULES.filter(function(m){return m.cat==='elective'}).map(cardHtml).join('');
+  var row=document.getElementById('topicRow');
+  row.innerHTML=CROSS_TOPICS.map(function(t){
+    return '<div class="topicchip" onclick="openTopic(\''+t.id+'\')" tabindex="0" role="button"><b>'+t.name+'</b><span>'+t.sub+'</span></div>';
+  }).join('');
+  // 真题入口
+  if(typeof PAPER_2025!=='undefined'){
+    var totalQ=PAPER_2025.papers.reduce(function(s,p){return s+p.subs.length},0);
+    var yearsCount=(typeof PAPER_YEARS!=='undefined')?PAPER_YEARS.length:1;
+    var fullCount=(typeof PAPER_YEARS!=='undefined')?PAPER_YEARS.filter(function(y){return y.full}).length:1;
+    document.getElementById('paperEntry').innerHTML=
+      '<div class="papercard" onclick="openYears()" tabindex="0" role="button">'+
+      '<div class="ppleft"><div class="ppyear">真题</div><div class="ppname">历年真题 · 2016–2025</div>'+
+      '<div class="ppmeta">'+yearsCount+'年框架 · '+fullCount+'年完整收录(2025) · 其余主题与考情持续补充</div></div>'+
+      '<div class="pparrow">→</div></div>';
+  }
+}
+
+function openModule(id,isBack){
+  if(!isBack){navStack.push({view:'module',arg:id});history.pushState({nav:1},'');}
+  var m=MODULES.find(function(x){return x.id===id});if(!m)return;
+  var title=m.full.replace(/必修|选择性必修/,'').trim()||m.name;
+  document.getElementById('mTitle').textContent=title;
+  document.getElementById('mTitle').style.setProperty('--dc',m.color);
+  document.getElementById('mSub').textContent=m.sub;
+  var w=document.getElementById('mWeight');w.textContent=m.weight;w.style.setProperty('--dc',m.color);w.style.setProperty('--dcsoft',m.color+'18');
+  document.getElementById('mIntro').textContent=m.intro;
+  document.getElementById('mIntro').style.setProperty('--dc',m.color);
+  // 考情
+  var ex=EXAM_DATA[m.id];
+  var fr=document.getElementById('mFreq');
+  if(ex){fr.textContent=ex.freq;fr.style.display='';}else{fr.style.display='none';}
+  var ee=document.getElementById('mExam');
+  if(ex){
+    var hot=ex.hot.map(function(h){
+      return '<div class="hotitem"><div class="ht"><b>'+h.p+'</b><span class="htag">'+h.tag+'</span></div><div class="hd">'+h.detail+'</div></div>';
+    }).join('');
+    ee.innerHTML='<div class="examblock"><div class="eh"><span class="dot"></span><h4>考情聚焦</h4></div>'+
+      '<div class="esum">'+ex.summary+'</div>'+hot+
+      '<div class="examyears"><b>近年涉及:</b> '+ex.years+'</div>'+
+      '<div class="esrc">来源:'+ex.src+'</div></div>';
+  }else{ee.innerHTML='';}
+  // 知识点详解(全重点,标签右对齐+竖线版式)
+  var kbMod=(typeof KB!=='undefined'&&KB[m.id])?KB[m.id]:null;
+  document.getElementById('mChapters').innerHTML=m.chapters.map(function(c,i){
+    var kbPts=kbMod?kbMod[c.t]:null;
+    var body;
+    if(kbPts){
+      var kdCh=(typeof KD_MAP!=='undefined'&&KD_MAP[m.id])?KD_MAP[m.id][c.t]:null;
+      body='<div class="ptcol">'+kbPts.map(function(pt){
+        var secs=pt.secs.map(function(s){
+          var isErr=(s[0]==='易错');
+          var cls=isErr?'seclabel err':'seclabel';
+          return '<div class="secrow"><span class="'+cls+'">'+s[0]+'</span><span class="sectext">'+s[1]+'</span></div>';
+        }).join('');
+        var kd=kdCh?kdCh[pt.t]:null;
+        var badge=kd?'<span class="kdbadge'+(kd.level==='难点'?' hard':(kd.level.indexOf('必考')>=0||kd.level.indexOf('热点')>=0?' top':''))+'">'+kd.level+'</span>':'';
+        var zt=(typeof ZHENTI!=='undefined'&&ZHENTI[m.id]&&ZHENTI[m.id][pt.t])?ZHENTI[m.id][pt.t]:null;
+        var ztlink=zt?'<button class="ztlink" onclick="jumpToPaper(\''+m.id+'\',\''+encodeURIComponent(pt.t)+'\')">→ 见2025真题</button>':'';
+        var kdrow=(kd||zt)?'<div class="kdrow"><span class="kdlabel">考</span><span class="kdtext">'+(kd?kd.note:'')+'</span>'+ztlink+'</div>':'';
+        return '<div class="kbcard" style="--dc:'+m.color+'"><div class="kbtitle">'+pt.t+badge+'</div><div class="kbsecs">'+secs+'</div>'+kdrow+'</div>';
+      }).join('')+'</div>';
+    }else{
+      body='<div class="ptlist">'+c.points.map(function(p){return '<div class="ptcard"><div class="pchead">'+p+'</div></div>'}).join('')+'</div>';
+    }
+    return '<div class="chapter" style="--dc:'+m.color+'"><div class="chtitle"><div class="chnum">'+(i+1)+'</div><h3>'+c.t+'</h3></div>'+body+'</div>';
+  }).join('');
+  document.getElementById('page-module').style.setProperty('--dc',m.color);
+  document.getElementById('page-module').style.setProperty('--dcsoft',m.color+'18');
+  showPage('page-module');
+}
+
+function openTopic(id,isBack){
+  if(!isBack){navStack.push({view:'topic',arg:id});history.pushState({nav:1},'');}
+  var t=CROSS_TOPICS.find(function(x){return x.id===id});if(!t)return;
+  document.getElementById('tTitle').textContent=t.name;
+  document.getElementById('tTitle').style.setProperty('--dc','var(--accent)');
+  document.getElementById('tSub').textContent=t.sub;
+  document.getElementById('tIntro').textContent=t.desc;
+  document.getElementById('tIntro').style.setProperty('--dc','var(--accent)');
+  // 知识链展开:路径概览 + 编号卡片
+  var td=(typeof TOPIC_DETAIL!=='undefined')?TOPIC_DETAIL[id]:null;
+  var chainBox=document.getElementById('tChain');
+  if(td){
+    var path=td.chain.map(function(c){return '<span class="pathnode">'+c.brief+'</span>'}).join('<span class="patharrow">→</span>');
+    var cards=td.chain.map(function(c,i){
+      return '<div class="ckcard">'+
+        '<div class="ckhead"><span class="cknum">'+(i+1)+'</span><span class="ckstage">'+c.stage+'</span><span class="ckfrom">'+c.from+'</span></div>'+
+        '<div class="ckbody">'+c.body+'</div>'+
+        '<div class="ckrow"><span class="cklabel">衔接</span><span class="cktext">'+c.link+'</span></div>'+
+        '<div class="ckrow"><span class="cklabel exam">考法</span><span class="cktext">'+c.exam+'</span></div>'+
+        '</div>';
+    }).join('');
+    chainBox.innerHTML='<div class="sechead"><div class="bar"></div><h2>知识链条</h2><span class="note">这条线索如何贯穿各模块</span></div>'+
+      '<div class="pathbar">'+path+'</div>'+
+      '<div class="ckwrap">'+cards+'</div>'+
+      '<div class="topicexam"><span class="teicon">◎</span>'+td.exam+'</div>';
+  }else{chainBox.innerHTML='';}
+  document.getElementById('tMods').innerHTML=t.modules.map(function(mid){
+    var m=MODULES.find(function(x){return x.id===mid});
+    return m?'<span class="tpmodchip" onclick="openModule(\''+mid+'\')" tabindex="0" role="button">'+m.full+' · '+m.sub+'</span>':'';
+  }).join('');
+  showPage('page-topic');
+}
+
+function showPage(id){
+  document.body.style.overflow='';
+  document.querySelectorAll('.page').forEach(function(p){p.classList.remove('on')});
+  document.getElementById(id).classList.add('on');
+  window.scrollTo({top:0,behavior:'auto'});
+}
+// ===== 统一导航返回栈:任何跳转都记录来源,返回永远回上一步 =====
+var navStack=[{view:'home'}]; // 栈顶=当前页面
+function goBack(){
+  if(navStack.length<=1){renderView({view:'home'},true);navStack=[{view:'home'}];return;}
+  navStack.pop(); // 弹出当前页
+  var prev=navStack[navStack.length-1]; // 新栈顶=要返回的页
+  renderView(prev,true); // isBack=true,不再重复入栈
+}
+function renderView(v,isBack){
+  if(v.view==='module')openModule(v.arg,isBack);
+  else if(v.view==='topic')openTopic(v.arg,isBack);
+  else if(v.view==='paper')openPaper(isBack);
+  else if(v.view==='years')openYears(isBack);
+  else if(v.view==='yeardetail')openYear(v.arg,isBack);
+  else goHome(isBack);
+}
+function goHome(isBack){if(!isBack)navStack=[{view:'home'}];showPage('page-home');}
+
+function openYears(isBack){
+  if(!isBack){navStack.push({view:'years'});history.pushState({nav:1},'');}
+  document.getElementById('yearsGrid').innerHTML=PAPER_YEARS.map(function(y){
+    var badge=y.full?'<span class="ybadge yfull">完整收录</span>':(y.themes.length?'<span class="ybadge ythemes">主题已确认</span>':'<span class="ybadge ypending">待补充</span>');
+    var sub=y.full?(y.themes.length+'道大题 · 含完整题目答案'):(y.themes.length?(y.themes.length+'个主题已确认 · 完整题目待补'):'主题待确认');
+    return '<div class="yearcard'+(y.full?' yfullcard':'')+'" onclick="'+(y.full?'openPaper()':'openYear(\''+y.year+'\')')+'" tabindex="0" role="button">'+
+      '<div class="yctop"><span class="ycyear">'+y.year+'</span>'+badge+'</div>'+
+      '<div class="ycsub">'+sub+'</div>'+
+      '<div class="ycarrow">→</div></div>';
+  }).join('');
+  showPage('page-years');
+}
+function openYear(year,isBack){
+  if(!isBack){navStack.push({view:'yeardetail',arg:year});history.pushState({nav:1},'');}
+  var y=PAPER_YEARS.find(function(x){return x.year===year});if(!y)return;
+  document.getElementById('ydTitle').textContent=y.year+'年地理等级考';
+  document.getElementById('ydDate').textContent=y.date;
+  document.getElementById('ydCrumb').textContent=y.year+'年';
+  document.getElementById('ydNote').textContent=y.note;
+  var body='';
+  if(y.themes.length){
+    body='<div class="ydsec"><div class="ydsechead">考试主题(综合分析大题)</div>'+
+      y.themes.map(function(t,i){return '<div class="themecard"><span class="themenum">'+(i+1)+'</span><span class="themetxt">'+t+'</span></div>';}).join('')+
+      '</div>'+
+      '<div class="ydpending"><span class="pendicon">✎</span>完整题目(选择题+综合分析的设问、选项、答案、图表)待补充。如你有该年完整真题(PDF或图片),可提供后录入。</div>';
+  }else{
+    body='<div class="ydpending big"><span class="pendicon">✎</span>该年考试主题待从官方信息确认,完整题目待补充。<br/>如你有'+y.year+'年的完整真题(PDF或图片),可提供后录入,将像2025年那样收录完整题目、答案与图表。</div>';
+  }
+  document.getElementById('ydThemes').innerHTML=body;
+  showPage('page-yeardetail');
+}
+function openPaper(isBack){
+  var P=PAPER_2025;
+  document.getElementById('paperTitle').textContent=P.name;
+  document.getElementById('paperNote').textContent=P.note;
+  document.getElementById('paperList').innerHTML=P.papers.map(function(p,pi){
+    var subs=p.subs.map(function(s){
+      var kpBtn='';
+      if(s.kp){
+        var mod=MODULES.find(function(x){return x.id===s.kp[0]});
+        var modName=mod?mod.sub:s.kp[0];
+        kpBtn='<button class="kpjump" onclick="jumpToKp(\''+s.kp[0]+'\',\''+encodeURIComponent(s.kp[1])+'\')">→ '+s.kp[1]+'</button>';
+      }
+      return '<div class="psub" id="sub-'+p.id+'-'+s.n+'"><div class="psubq"><span class="psubn">('+s.n+')</span><span class="psubtype">'+s.type+'</span>'+s.q+'</div>'+
+        '<div class="psuba"><span class="psalbl">答</span>'+s.a+'</div>'+
+        (kpBtn?'<div class="psubkp">关联知识点：'+kpBtn+'</div>':'')+'</div>';
+    }).join('');
+    var imgHtml=p.img?'<div class="pbimg"><span class="pbimglbl">图表说明</span>'+p.img+'</div>':'';
+    var figHtml='';
+    if(p.pages&&typeof PAGES!=='undefined'){
+      figHtml='<div class="pbfigbtns">'+p.pages.map(function(pg){
+        return PAGES[pg]?'<button class="figbtn" onclick="showFig(\''+pg+'\')"><span class="figbtnicon">▦</span>查看原图 · '+PAGES[pg].name.replace('真题原卷','')+'</button>':'';
+      }).join('')+'</div>';
+    }
+    return '<div class="paperblock" id="pb-'+p.id+'"><div class="pbhead" onclick="this.parentNode.classList.toggle(\'open\')" tabindex="0" role="button" aria-label="展开/收起'+p.title+'">'+
+      '<span class="pbnum">'+(pi+1)+'</span><div class="pbtitle"><b>'+p.title+'</b><span>'+p.subs.length+'小题</span></div><span class="pbarrow">▾</span></div>'+
+      '<div class="pbbody"><div class="pbbg">'+p.bg+'</div>'+imgHtml+figHtml+subs+'</div></div>';
+  }).join('');
+  if(!isBack){navStack.push({view:'paper'});history.pushState({nav:1},'');}
+  showPage('page-paper');
+}
+
+function showFig(fk){
+  var f=PAGES[fk];if(!f)return;
+  var img=document.getElementById('lbimg');
+  img.src=f.src;img.alt=f.name||'真题原卷图';
+  document.getElementById('lbname').textContent=f.name;
+  document.getElementById('lightbox').classList.add('show');
+  document.body.style.overflow='hidden';
+}
+function closeFig(){
+  document.getElementById('lightbox').classList.remove('show');
+  document.body.style.overflow='';
+}
+function jumpToPaper(mid,kpEnc){
+  var kp=decodeURIComponent(kpEnc);
+  // 在PAPER_2025里反查:哪道大题的哪道小题kp指向这个知识点
+  var targetPid=null,targetN=null;
+  for(var i=0;i<PAPER_2025.papers.length;i++){
+    var pp=PAPER_2025.papers[i];
+    for(var j=0;j<pp.subs.length;j++){
+      var s=pp.subs[j];
+      if(s.kp&&s.kp[0]===mid&&s.kp[1]===kp){targetPid=pp.id;targetN=s.n;break;}
+    }
+    if(targetPid)break;
+  }
+  openPaper();
+  if(!targetPid){window.scrollTo({top:0,behavior:'smooth'});return;}
+  setTimeout(function(){
+    // 展开目标大题
+    var pb=document.getElementById('pb-'+targetPid);
+    if(pb){pb.classList.add('open');}
+    setTimeout(function(){
+      // 滚动到目标小题并高亮
+      var sub=document.getElementById('sub-'+targetPid+'-'+targetN);
+      if(sub){
+        sub.scrollIntoView({behavior:'smooth',block:'center'});
+        sub.classList.add('subflash');
+        setTimeout(function(){sub.classList.remove('subflash')},1800);
+      }else if(pb){
+        pb.scrollIntoView({behavior:'smooth',block:'start'});
+      }
+    },280);
+  },120);
+}
+function jumpToKp(mid,kpEnc){
+  var kp=decodeURIComponent(kpEnc);
+  openModule(mid);
+  setTimeout(function(){
+    var cards=document.querySelectorAll('#page-module .kbtitle');
+    for(var i=0;i<cards.length;i++){
+      if(cards[i].textContent.indexOf(kp)>=0){
+        var card=cards[i].closest('.kbcard');
+        if(card){card.scrollIntoView({behavior:'smooth',block:'center'});card.classList.add('kbflash');setTimeout(function(){card.classList.remove('kbflash')},1600);}
+        break;
+      }
+    }
+  },120);
+}
+function toggleDark(){document.body.classList.toggle('dark');document.getElementById('darkBtn').textContent=document.body.classList.contains('dark')?'◑':'◐'}
+if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches){document.body.classList.add('dark');document.getElementById('darkBtn').textContent='◑'}
+
+// ===== 浏览器/硬件返回键:统一经 popstate 走返回栈 =====
+window.addEventListener('popstate',function(){
+  // 灯箱打开时,优先关闭灯箱而非后退页面
+  if(document.getElementById('lightbox').classList.contains('show')){closeFig();history.pushState({nav:1},'');return;}
+  goBack();
+});
+// ===== 键盘可访问性:Enter/空格激活 role=button;Esc 关闭灯箱 =====
+document.addEventListener('keydown',function(e){
+  if(e.key==='Escape'&&document.getElementById('lightbox').classList.contains('show')){closeFig();return;}
+  if((e.key==='Enter'||e.key===' '||e.key==='Spacebar')){
+    var el=document.activeElement;
+    if(el&&el.getAttribute&&el.getAttribute('role')==='button'){e.preventDefault();el.click();}
+  }
+});
+history.replaceState({nav:0},''); // 基线:首页
+renderHome();
+</script>
+</body>
+</html>
